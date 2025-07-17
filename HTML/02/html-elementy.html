@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Toto je stránka s HTML Tagy.">
+    <title>HTML Elementy</title>
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"
+    >
+</head>
+<body>
+    <main class="container">
+
+
+    <h1>HTML Elementy</h1>
+
+    <a href="https://google.com" title="Odkaz na Google">GOOGLE</a>
+
+    <a href="https://google.com" target="_blank" rel="nofollow">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/300px-Google_2015_logo.svg.png" alt="">
+    </a>
+
+    
+
+    <img
+        src="https://www.w3schools.com/images/w3schools_logo_500_04AA6D.webp"
+        alt="W3schools logo"
+        width="500"
+        height="469"
+        loading="lazy">
+
+    <button>Tlačítko</button>
+
+    <ul>
+        <li><h2>Praha</h2></li>
+        <li><h2>Brno</h2></li>
+        <li>
+            <h2>Ostrava</h2>
+            <ul>
+                <li>Ostrava Sever</li>
+                <li>Ostrava Jih</li>
+            </ul>
+        </li>
+    </ul>
+
+    <ol>
+        <li>Praha</li>
+        <li>Brno</li>
+        <li></li>
+    </ol>
+
+
+    <!-- formulářové prvky (Start) -->
+    <label for="Petr">50% sleva</label>
+    <select name="pets" id="Petr" size="3" multiple>
+        <option value="">--option--</option>
+        <option value="dog">Dog</option>
+        <option value="cat">Cat</option>
+        <option value="hamster">Hamster</option>
+        <option value="parrot">Parrot</option>
+        <option value="spider" selected>Spider</option>
+        <option value="goldfish" selected>Goldfish</option>
+    </select>
+
+    <input name="jmeno" type="text" value="Jan" disabled required maxlength="100" minlength="1">
+    <input type="date">
+    <input type="email"> <!--test@email.cz-->
+    <input type="hidden">
+    <input type="file">
+    <input type="number" min="0" max="200" name="vek">
+    <input type="password" name="">
+
+    <label for="podminky">Souhlasím s podmínkami</label>
+    <input type="checkbox" id="podminky">
+
+    <label>Start <input type="checkbox"> Konec</label>
+
+    <div><!-- div slouží pro vytvoření skupiny, nemá žádný význam -->
+        <label><input type="radio" name="volba"> A</label>
+        <label><input type="radio" name="volba"> B</label>
+        <label><input type="radio" name="volba"> C</label>
+    </div>
+
+    <div>
+        <label><input type="radio" name="volba222"> X</label>
+        <label><input type="radio" name="volba222"> Y</label>
+        <label><input type="radio" name="volba222"> Z</label>
+    </div>
+
+    <input type="range">
+
+    <textarea name="" id="" rows="5"></textarea>
+
+    <!-- formulářové prvky (Konec) -->
+
+
+    <!--
+    odkaz může být
+    relativní /users/
+
+    https://google.com/users/
+
+    nebo
+    absolutní - https://google.com
+    -->
+
+
+    <div>
+        
+        <input type="radio" name="radio-input" id="v1">
+        <label for="v1">Volba 1</label>
+        
+        <input type="radio" name="radio-input" id="v2">
+        <label for="v2">Volba 2 </label>
+        
+        <input type="radio" name="radio-input" id="v3">
+        <label for="v3">Volba 3 </label>
+    </div>
+ 
+    </main>
+</body>
+</html>
