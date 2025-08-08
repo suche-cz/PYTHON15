@@ -9,15 +9,20 @@
         content="Suche Ganbaatar je Full Stack Developer pracující v Praze. Programování se věnuje 12 let.">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+
 </head>
 
-<body>
+<body style="font-family: 'Google Sans Code', monospace;">
 
     <header>
         <nav class="navbar navbar-expand-lg">
             <div class="container">
                 <a class="navbar-brand" href="#">Portfolio</a>
-                
+
                 <div class="collapse navbar-collapse" id="navbarText">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
@@ -25,7 +30,7 @@
                         </li>
                     </ul>
                     <!-- mb = margin bottom - prostor dole (2)-->
-                     <!-- mb-lg-0 = margin bottom - prostor dole (2)-->
+                    <!-- mb-lg-0 = margin bottom - prostor dole (2)-->
                     <ul class="navbar-nav mb-2 mb-lg-0 nav-underline">
                         <li class="nav-item">
                             <a class="nav-link active" href="#">About me</a>
@@ -45,6 +50,7 @@
                     </ul>
                 </div>
             </div>
+        </nav>
     </header>
 
     <main class="container">
@@ -52,8 +58,11 @@
             <div class="col">
                 <h1 class="display-4">Hello, I'm Suche Ganbaatar</h1>
                 <h2>Full Stack Developer</h2>
-                <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam expedita mollitia porro inventore saepe, dolorum obcaecati quaerat perferendis at facere dicta quidem quis? Ipsa unde dicta consequuntur, quis error a!</p>
+                <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam expedita mollitia porro
+                    inventore saepe, dolorum obcaecati quaerat perferendis at facere dicta quidem quis? Ipsa unde dicta
+                    consequuntur, quis error a!</p>
                 <a href="#" class="btn btn-primary btn-lg">Download CV</a>
+                <a href="hobby.html" class="btn btn-secondary btn-lg">My Hobbies</a>
             </div>
             <div class="col col-5">
                 <img src="image.jpg" alt="Profilový obrázek" width="640" height="372" class="img-fluid rounded-4">
@@ -63,10 +72,57 @@
 
         <section class="row mb-5">
             <h2 id="skill">Skills & Tools</h2>
+            <div class="row row-cols-1 row-cols-lg-3">
+                <div class="feature col">
+                    <div
+                        class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+                    </div>
+                    <h3 class="fs-4 text-body-emphasis">Pascal</h3>
+                    <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another
+                        sentence and
+                        probably just keep going until we run out of words.</p> <a href="#" class="icon-link">
+                        Call to action
+                        <svg class="bi" aria-hidden="true">
+                            <use xlink:href="#chevron-right"></use>
+                        </svg> </a>
+                </div>
+                <div class="feature col">
+                    <div
+                        class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+                    </div>
+                    <h3 class="fs-4 text-body-emphasis">Python</h3>
+                    <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another
+                        sentence and
+                        probably just keep going until we run out of words.</p> <a href="#" class="icon-link">
+                        Call to action
+                        <svg class="bi" aria-hidden="true">
+                            <use xlink:href="#chevron-right"></use>
+                        </svg> </a>
+                </div>
+                <div class="feature col">
+                    <div
+                        class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+                    </div>
+                    <h3 class="fs-4 text-body-emphasis">HTML 5</h3>
+                    <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another
+                        sentence and
+                        probably just keep going until we run out of words.</p> <a href="#" class="icon-link">
+                        Call to action
+                        <svg class="bi" aria-hidden="true">
+                            <use xlink:href="#chevron-right"></use>
+                        </svg> </a>
+                </div>
+            </div>
         </section>
-        
+
         <section class="row mb-5">
             <h2 id="exp">Experience</h2>
+            <div class="row row-cols-1 row-cols-lg-3">
+                <div class="col">A</div>
+                <div class="col">B</div>
+                <div class="col">C</div>
+                <div class="col">D</div>
+            </div>
         </section>
 
         <section class="row mb-5">
@@ -101,7 +157,7 @@
                     <textarea class="form-control" placeholder="Váš text" id="textarea" rows="5"></textarea>
                     <label for="textarea">Váš text</label>
                 </div>
-                
+
                 <button type="submit" class="btn btn-primary btn-lg">Odeslat</button>
             </form>
         </section>
@@ -110,7 +166,7 @@
             <div>links</div>
         </section>
 
-        
+
         <section class="mb-5">
             <div>Network</div>
         </section>
