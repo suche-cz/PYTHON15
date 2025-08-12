@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* css selector pomocí tagu */
+        div,
+        p {
+            background: lightcoral;
+            border: 5px solid gray;
+            display: inline-block;
+            padding: 5px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        /* všechny p které jsou uvnitř div */
+        div p {
+            color: white;
+        }
+
+        /* všechny a přímými potomky div */
+        div>a {
+            font-size: 40px;
+        }
+
+        body {
+            background: #aaa;
+            background-image: url('https://picsum.photos/200/300');
+            background-repeat: no-repeat;
+            background-position: center 100px;
+        }
+
+        h2 {
+            /* desetinné hodnoty 0-1 */
+            opacity: .5;
+            /* využít generátor nebo se naučit syntaxi */
+            -webkit-box-shadow: 2px 2px 9px 0px #FF0000;
+            box-shadow: 2px 2px 9px 0px #FF0000;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div style="color: red; font-weight: 700;">Hello CSS</div>
+    <div style="color: blue; font-weight: 700;">Hello CSS</div>
+
+    <div>Button</div>
+    <div style="line-height: 40px;">Button</div>
+    <div>Button</div>
+
+    <p>Hello Paragraph</p>
+
+    <div>
+        <p>White text</p>
+    </div>
+
+    <h1 style="text-align: center; text-decoration: underline; letter-spacing: 5px;">Title</h1>
+
+    <h2>Test extra visual</h2>
+
+    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis in voluptate
+        est maxime. Saepe mollitia quaerat explicabo autem adipisci quod id accusamus. Excepturi repellendus eligendi
+        adipisci sunt? Maxime, reprehenderit labore!</span>
+
+
+    <a href="#">Link 1</a>
+
+    <div>
+        <a href="#">Link 2</a>
+    </div>
+
+    <div>
+        <span>
+            <a href="#">Link 3</a>
+        </span>
+    </div>
+</body>
+
+</html>

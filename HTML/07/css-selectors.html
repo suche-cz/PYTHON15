@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            /* 2 rem = 2x root size font size */
+            margin: 2rem auto;
+            max-width: 640px;
+            min-width: calc(320px - 2rem);
+            padding: 0 1rem;
+        }
+
+        * {
+            color: #555;
+        }
+
+        h1,
+        h2,
+        p {
+            font-family: monospace;
+        }
+
+        /* záleží na pořadí zápisu: to co je poslední má přednost */
+        p {
+            font-family: sans-serif;
+        }
+
+        /* výběr pomocí id="b2" */
+        #b2 {
+            color: red;
+        }
+
+        /* výběr pomocí class="button" */
+        .button {
+            color: blue;
+        }
+
+        .red {
+            background: red;
+        }
+
+        /* výběr podle existence atributu type */
+        [type] {
+            color: green;
+        }
+
+        /* výběr podle type="submit" */
+        [type="submit"] {
+            font-weight: 700;
+        }
+
+        /* tlačíko, které je prvním potomkem */
+        button:first-child {
+            background: blue;
+        }
+
+        button:last-child {
+            font-size: 1.25rem;
+        }
+
+        button:nth-child(4) {
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body><!-- sans-serif nebo monospace -->
+
+    <h1>Nadpis</h1>
+    <h2>Podnadpis</h2>
+
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia, magnam?</p>
+    <p class="button">I am blue!</p>
+
+    <section>
+        <button>Button 1</button>
+        <button id="b2">Button 2</button>
+
+        <div>
+            <button class="red">Button 3</button>
+            <button class="button">Button 3</button>
+            <button class="button red">Button 3</button>
+            <button>Also 4th child</button>
+        </div>
+
+        <button type="submit">Button 4</button>
+        <button>Button 5</button>
+    </section>
+
+    <div>
+        <button>Button X</button>
+    </div>
+
+    <a href="#">Link 1</a>
+    <a href="#" title="Link to page">Link 2</a>
+
+</body>
+
+</html>
