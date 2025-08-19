@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .rating {
+            display: grid;
+            grid-template-columns: 100px 200px 50px;
+            gap: .5rem;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Shrnutí recenzí</h1>
+    <h2>
+        <img src="https://www.reservio.cz/_next/static/f94335e192a90fe3ccebcff56134cf61.svg" alt="" height="26"
+            width="26">
+        4.99 Perfektní (267)
+    </h2>
+
+    <div class="rating">
+        <span>Perfektní</span>
+        <progress max="100" value="90"></progress>
+        <span>264</span>
+
+        <span>Skvělé</span>
+        <progress max="100" value="5"></progress>
+        <span>3</span>
+
+        <span>Skvělé</span>
+        <div style="width: 90px; height: 1rem; background: orange;"></div>
+        <span>3</span>
+
+        <span>Skvělé</span>
+        <div style="width: 10px; height: 1rem; background: orange;"></div>
+        <span>3</span>
+    </div>
+
+</body>
+
+</html>
