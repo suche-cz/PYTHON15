@@ -1,0 +1,45 @@
+MENU toggle
+
+colors
+position
+flex
+
+/* Box & Layout */
+display position top,
+right,
+bottom,
+left float clear z-index overflow width,
+height,
+max-width,
+min-width,
+max-height,
+min-height margin padding box-sizing
+/* Typography */
+font-family font-size font-weight line-height text-align text-decoration letter-spacing word-spacing color
+/* Background & Borders */
+background,
+background-color,
+background-image,
+background-size,
+background-position,
+background-repeat border,
+border-width,
+border-style,
+border-color,
+border-radius outline
+/* Flex & Grid */
+flex,
+flex-direction,
+flex-wrap,
+justify-content,
+align-items,
+align-content,
+align-self grid,
+grid-template-columns,
+grid-template-rows,
+grid-gap,
+grid-area
+/* Visual & Effects */
+opacity visibility cursor box-shadow transition transform animation
+/* Misc */
+overflow clip content

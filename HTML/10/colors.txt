@@ -1,0 +1,47 @@
+color - barva textu
+background - pozadí
+border - ohraničení
+shadow - stíny
+
+
+/* Named colors */
+color: red;
+color: blue;
+color: green;
+
+R - red   - 0-255
+G - green - 0-255
+B - blue  - 0-255
+
+/* RGB / RGBA */
+color: rgb(255,255,255);
+color: rgb(50%,50%,30%);
+color: rgba(255,0,0,0.5);
+
+/* Hex */
+0-F
+0123456789ABCDEF
+00 = 0
+FF = 255
+
+color: rgb(255,0,0);
+color: #ff0000; /* red */
+color: #00ff00; /* green */
+color: #0000ff; /* blue */
+color: #f00;
+
+
+/* HSL / HSLA */
+H - hue (odstnín) 0-360
+S - saturation (sytost) 0-100%
+L - lightness (světelnost) 0-100%
+
+color: hsl(0, 100%, 50%);
+color: hsl(0, 100%, 25%);
+color: hsl(0, 50%, 50%);
+
+color: hsl(0, 100%, 50%);
+color: hsla(0, 100%, 50%, 0.5);
+
+/* Transparent */
+color: transparent;
