@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #layout {
+            display: flex;
+        }
+
+        #layout>div {
+            border: 2px solid #000;
+            min-height: 100vh;
+        }
+
+        #left {
+            width: 200px;
+        }
+
+        #mid {
+            flex-grow: 1;
+        }
+
+        #right {
+            width: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="layout">
+        <div id="left"></div>
+        <div id="mid"></div>
+        <div id="right"></div>
+    </div>
+</body>
+
+</html>

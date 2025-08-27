@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #parent {
+            /* https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
+            display: flex;
+            gap: 5rem 1rem;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            /* horizontální zarovnání */
+            align-items: end;
+            /* vertikální "zarovnání" */
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="parent">
+        <a href="#" style="order: 1; flex-grow: 1;">Link</a>
+
+        <div style="height: 100px;">Lorem ipsum dolor sit amet consectetur</div>
+        <div>Lorem ipsum dolor sit amet consectetur</div>
+        <div style="order: 2;">Lorem ipsum dolor sit amet consectetur</div>
+        <div>Lorem ipsum dolor sit amet consectetur</div>
+        <div>Lorem ipsum dolor sit amet consectetur</div>
+
+        <button style="order: -1;">Button</button>
+    </div>
+
+</body>
+
+</html>
