@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        header,
+        main,
+        footer {
+            border: 2px solid #ccc;
+            min-height: 2rem;
+        }
+
+        @media (min-width: 600px) {
+            #layout {
+                display: flex;
+            }
+
+            #layout header {
+                flex-grow: 1;
+            }
+
+            #layout main {
+                flex-grow: 3;
+            }
+        }
+
+        @media (min-width: 800px) {
+            #layout main {
+                flex-grow: 5;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="layout">
+        <header>Header</header>
+        <main>Main</main>
+    </div>
+    <footer>Footer</footer>
+</body>
+
+</html>
