@@ -1,0 +1,13 @@
+1. responsivita
+@media
+layout, komponenty
+
+2. transition, animace, svg
+https://cs.wikipedia.org/wiki/Scalable_Vector_Graphics
+
+3. coding něčeho užitečného
+
+4. přehled CSS:
+- https://www.jakpsatweb.cz/css/
+- https://www.vzhurudolu.cz/prirucka/css3
+- https://github.com/necolas/idiomatic-css/tree/master/translations/cs-CZ
