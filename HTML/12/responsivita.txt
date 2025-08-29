@@ -10,4 +10,5 @@ https://cs.wikipedia.org/wiki/Scalable_Vector_Graphics
 4. přehled CSS:
 - https://www.jakpsatweb.cz/css/
 - https://www.vzhurudolu.cz/prirucka/css3
+- https://gist.github.com/vanaf1979/9383395531d29c756183364ea1140cca
 - https://github.com/necolas/idiomatic-css/tree/master/translations/cs-CZ

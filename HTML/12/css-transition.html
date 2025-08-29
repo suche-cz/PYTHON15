@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            background: #ccc;
+            transition: background 5s ease-in, width 3s cubic-bezier(0.7, 0, 1, 1);
+        }
+
+        div:hover {
+            background: red;
+            width: 200px;
+        }
+
+        img {
+            transition: all 1s;
+        }
+
+        img:hover {
+            width: 250px;
+            height: 250px;
+        }
+
+        @keyframes myAnim {
+            0% {
+                width: 100px;
+            }
+
+            25% {
+                width: 200px;
+            }
+
+            75% {
+                width: 400px;
+            }
+
+            100% {
+                width: 100px;
+            }
+        }
+
+        #test {
+            background: orange;
+        }
+
+        .test h1 {
+            background: gray;
+        }
+
+        body div {
+            background: green;
+        }
+
+        div {
+            animation: 1s myAnim infinite;
+            background: red;
+        }
+
+        img {
+            animation: 2s myAnim;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="test" class="test"></div>
+
+    <img src="https://placehold.co/200" alt="" width="200" height="200">
+
+</body>
+
+</html>
