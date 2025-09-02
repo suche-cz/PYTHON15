@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div>span {
+            border: 2px solid #eee;
+            border-radius: .5rem;
+            padding: .1rem .75rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div style="display: flex; gap: 1rem; font-size: 4rem; font-family: monospace;">
+        <span id="number1"></span>
+        <span id="number2"></span>
+    </div>
+    <button id="button">Hod kostkou</button>
+
+    <script>
+        // vybereme element buttom podle id a uložíme do proměnné button
+        let button = document.getElementById('button');
+        // vybereme 1. element span podle id a uložíme do proměnné number1
+        let number1 = document.getElementById('number1');
+        // vybereme 2. element span podle id a uložíme do proměnné number2
+        let number2 = document.getElementById('number2');
+
+        // přidáme button click event
+        button.addEventListener('click', e => {
+            // do proměnné a si uložíme náhodné číslo 1-6
+            let a = Math.floor(Math.random() * 6) + 1;
+            // do proměnné b si uložíme náhodné číslo 1-6
+            let b = Math.floor(Math.random() * 6) + 1;
+
+            // pro span s id number1 nastavíme text na hodnotu a
+            number1.textContent = a;
+            // pro span s id number2 nastavíme text na hodnotu b
+            number2.textContent = b;
+        });
+    </script>
+
+</body>
+
+</html>

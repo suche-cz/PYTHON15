@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Image Size</title>
+    <style>
+        img {
+            background: #eee;
+        }
+    </style>
+</head>
+
+<body>
+
+    <img src="https://placehold.co/400" id="obraz" alt="картинка" width="100" height="100">
+    <button id="but">Random size</button>
+
+    <script>
+        let img = document.getElementById("obraz");
+        let button = document.getElementById("but");
+
+        button.addEventListener("click", e => {
+            let randomWidth = Math.floor(Math.random() * 1000) + 1;
+            let randomHeight = Math.floor(Math.random() * 1000) + 1;
+
+            img.width = randomWidth;
+            img.height = randomHeight;
+        });
+    </script>
+
+</body>
+
+</html>

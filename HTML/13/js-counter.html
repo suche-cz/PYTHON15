@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="number" value="0">
+    <button onclick="input.value = parseInt(input.value) + 1">Click me!</button>
+
+    <script>
+        let input = document.querySelector('input');
+        let button = document.querySelector('button');
+
+        button.onclick = function () {
+            alert('click button x');
+        }
+
+        button.addEventListener('click', function () {
+            alert('click button 1');
+        });
+
+        button.addEventListener('click', function () {
+            alert('click button 2');
+        });
+
+        button.addEventListener('click', function () {
+            alert('click button 3');
+        });
+
+        button.addEventListener('click', function () {
+            alert('click button 4');
+        });
+
+    </script>
+</body>
+
+</html>
