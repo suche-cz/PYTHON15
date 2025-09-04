@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        // string = textová hodnota
+        let jmeno = 'Suche';
+        let mesto = '';
+        let prijmeni = "Ganbaatar";
+        let nazev = `hodina JS: ${jmeno} ${prijmeni}`;
+
+        let html = '<button type="submit">\''; // \' escape sekcence pro speciální symboly
+
+        // int (integer) = celé číslo
+        let vek = 10;
+        let hmotnost = 100193920938;
+        let vysledek = vek + hmotnost; // matematické operace: + - / *
+
+        // float = desetinné číslo
+        let rychlost = 50.6;
+
+        let a = 10 / 3; // 3.3333333...
+        let b = 10 / 5; // 2
+        let c = 10 / 0; // infinity
+        let d = -10 / 0; // -infinity
+        let e = 10 / ''; // NaN = Not a Number
+
+        // boolean (bool) = pravdivostní hodnota true / false
+        let isActive = true;
+        let isNew = false;
+        let isLarger = a > b; // true
+        let isEqual = a == b; // false
+
+        // jedno rovnítko = je přiřazení hodnoty
+        // dvě rovnítka kontrola shody bez kontroly datového typu
+        // tři rovnítka kontrola shody s kontrolou datového typu
+        let isEqual2 = '1' == 1; // true // toto nepoužívat
+        let isEqual3 = '1' === 1; // false - kontrola na shodu i s datovým typem
+
+        // 
+        let nic = null; // žádná hodnota
+        let nedefinovano = undefined; // neexistující nebo nedefinovaná věc
+    </script>
+
+</body>
+
+</html>

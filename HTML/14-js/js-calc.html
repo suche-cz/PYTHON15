@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <label for="n1">První číslo</label>
+    <input type="number" id="n1" placeholder="Zadejte číslo">
+
+    <label for="n2">Druhé číslo</label>
+    <input type="number" id="n2" placeholder="Zadejte číslo">
+
+    <button id="btn">Sečti čísla</button>
+    <button id="btn2">Odečti čísla</button>
+
+    <script>
+        // vybrat html prvky se kterými budu pracovat
+        const n1 = document.getElementById('n1');
+        const n2 = document.getElementById('n2');
+        const button = document.getElementById('btn');
+        const button2 = document.getElementById('btn2');
+
+        /*
+        úkol: vytvořte nové tlačítko v html
+        v js jej vyberte do proměnné button2
+        pro button2 přidejte událost click
+        a při clicku vypočtěte rozdíl 2 čísel z n1 a n2
+        vytisněte do console
+        */
+
+        button.addEventListener('click', event => {
+            console.log('clicked');
+            let result = parseInt(n1.value) + parseInt(n2.value);
+            // console.log(typeof result);
+            console.log(result);
+        });
+
+        // element.addEventListener('udalost', event => {});
+
+        button2.addEventListener('click', event => {
+            console.log('click 2');
+            let result = parseInt(n1.value) - parseInt(n2.value);
+            console.log(result);
+        });
+
+        document.body.addEventListener('mousemove', event => {
+            console.log(event);
+        });
+
+    </script>
+
+</body>
+
+</html>

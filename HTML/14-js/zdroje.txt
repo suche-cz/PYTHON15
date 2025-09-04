@@ -1,0 +1,2 @@
+https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Scripting/What_is_JavaScript
+https://www.jakpsatweb.cz/javascript/javascript-uvod.html
