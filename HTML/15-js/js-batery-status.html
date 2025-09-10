@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #battery {
+            width: 100px;
+            height: 100px;
+            background: green;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="battery"></div>
+    <input id="status" type="number" min="0" max="100" value="100">
+
+    <script>
+        const isScreenOn = false;
+        const battery = document.getElementById('battery');
+        const status = document.getElementById('status');
+
+        status.addEventListener('change', event => {
+            const value = parseInt(status.value);
+            /*
+            100 - 80 zelená
+            79 - 50 - žlutá
+            49 - 10 - oranžová
+            9 - 0 - červená
+            */
+
+            if (value < 10) {
+                battery.style.background = 'red';
+                console.log('red');
+
+                if (value === 0) {
+                    console.log('telefon je dead');
+                }
+
+            } else if (value < 50) {
+                battery.style.background = 'orange';
+                console.log('orange');
+            } else if (value < 80) {
+                battery.style.background = 'yellow';
+                console.log('yellow');
+            } else {
+                battery.style.background = 'green';
+                console.log('green');
+            }
+
+        });
+
+    </script>
+</body>
+
+</html>

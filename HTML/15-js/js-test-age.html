@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!--
+    Chceme od uživatele získat věk
+    A podle věku, pokud má do 18let napíšeme že je mladistvý
+    Pokud má 18-64 řekneme že je v produktivním věku
+    Jinak je v důchodu
+    -->
+    <!--
+    1. input pro číslo + tlačíko + označit pomocí id
+    2. v JS získat prvky pomocí id
+    3. na click tlačítka spustit událost
+    4. záskáme hodnotu z input (+ převod)
+    5. podmínka (< 18, < 65, else)
+    -->
+
+    <input type="text" name="xyz">
+    <input type="number" id="age" name="xyz">
+    <button id="button" class="my-btn">Get Age</button>
+
+    <script>
+        const age = document.getElementById('age');
+        const button = document.getElementById('button');
+
+        button.addEventListener('click', e => {
+            const value = parseInt(age.value);
+
+            if (value < 18) {
+                alert('jsi mladistvý');
+            } else if (value < 65) {
+                alert('jsi produktivní');
+            } else {
+                alert('jsi důchodce');
+            }
+
+        });
+    </script>
+
+</body>
+
+</html>

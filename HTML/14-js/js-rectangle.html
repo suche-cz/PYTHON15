@@ -14,6 +14,12 @@
             width: 100px;
             height: 200px;
         }
+
+        @media print {
+            #rect {
+                print-color-adjust: exact;
+            }
+        }
     </style>
 </head>
 
@@ -23,14 +29,14 @@
         <h1>Rectangle calculator</h1>
 
         <div class="grid">
-            <input id="a" type="number" value="100" placeholder="Strana A" aria-label="Strana A">
-            <input id="b" type="number" value="200" placeholder="Strana B" aria-label="Strana B">
+            <input id="a" type="number" value="300" placeholder="Strana A" aria-label="Strana A" min="1">
+            <input id="b" type="number" value="200" placeholder="Strana B" aria-label="Strana B" min="1">
             <div>
                 <button id="button">Calculate</button>
             </div>
         </div>
 
-        <p>Obvod je: <strong id="txtObvod">600</strong> a obsah je: <strong id="txtObsah">20000</strong></p>
+        <p>Obvod je: <strong id="txtObvod"></strong> a obsah je: <strong id="txtObsah"></strong></p>
 
         <div id="rect"></div>
 
@@ -49,7 +55,23 @@
         const txtObsah = document.getElementById('txtObsah');
         const rect = document.getElementById('rect');
 
-        button.addEventListener('click', event => {
+        inputA.addEventListener('input', validateInput);
+        inputB.addEventListener('input', validateInput);
+        button.addEventListener('click', calculate);
+        inputA.addEventListener('change', calculate);
+        inputB.addEventListener('change', calculate);
+
+
+        function validateInput(event) {
+            let value = parseInt(event.target.value);
+            console.log(value < 1);
+            // if (pomínka) {co se má stát}
+            if (value < 1) {
+                event.target.value = 1;
+            }
+        }
+
+        function calculate() {
             /*
             1. získat číselné hodnoty z inputA a inputB
             2. chci vypočítat obvod a obsah
@@ -68,8 +90,9 @@
             txtObsah.textContent = obsah;
             rect.style.width = a + 'px';
             rect.style.height = b + 'px';
-        });
+        }
 
+        calculate();
     </script>
 
 </body>
