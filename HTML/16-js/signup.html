@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1>Registrace</h1>
+
+    <form action="">
+        <label>
+            Email
+            <input type="email" name="email" required>
+        </label>
+
+        <label>
+            Heslo
+            <input type="password" name="password" required>
+        </label>
+
+        <label>
+            Heslo (znovu)
+            <input type="password" name="password_repeat" required>
+        </label>
+
+        <button type="submit">Sign up</button>
+    </form>
+
+    <script>
+        const form = document.querySelector('form');
+        const email = form.querySelector('input[name="email"]');
+        const password = form.querySelector('input[name="password"]');
+        const password_repeat = form.querySelector('input[name="password_repeat"]');
+
+        form.addEventListener('submit', event => {
+            event.preventDefault(); // potlačení výchozího chování události
+            console.log('submit');
+
+            const passwordMatch = password.value === password_repeat.value;
+            const emailIsValid = email.value.endsWith('@gmail.com');
+
+            if (passwordMatch && emailIsValid) {
+                alert('správné udaje');
+            } else {
+                // (ne)shoda hesel
+                if (!passwordMatch) { alert('Hesla se neshodují') }
+                // (ne)validní email
+                if (!emailIsValid) { alert('Použijte gmail') }
+            }
+
+
+            if (passwordMatch) {
+                console.log('password match');
+            } else {
+                console.log('password not match');
+            }
+
+            if (emailIsValid) {
+                console.log('validní email');
+            } else {
+                console.log('neplatný email');
+            }
+        });
+    </script>
+
+</body>
+
+</html>

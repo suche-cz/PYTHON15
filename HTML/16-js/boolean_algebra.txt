@@ -1,0 +1,22 @@
+Nákup auta
+
+cena musí být nad 100 000 kč
+nebo (OR) znacka bude Tesla
+
+100 000 Kč  Škoda => ne   |   100 000 kč > 100 000 kč (False) Tesla == Škoda (False) => False or False => False
+ 80 000 Kč  Tesla => ano  |    80 000 kč > 100 000 kč (False) Tesla == Tesla (True) => False or True => True
+120 000 Kč  BMW   => ano  |   120 000 kč > 100 000 kč (True)  Tesla == BMW   (False) => True or False => True
+100 000 Kč  Tesla => ano  |   100 000 kč > 100 000 kč (False) Tesla == Tesla (True) => False or True => True
+500 000 Kč  Škoda => ano
+800 000 Kč  Tesla => ano
+
+
+cena musí být nad 100 000 kč
+a zároveň (AND) znacka bude Tesla
+
+100 000 Kč  Škoda => ne
+ 80 000 Kč  Tesla => ne
+120 000 Kč  BMW   => ne
+100 000 Kč  Tesla => ne
+500 000 Kč  Škoda => ne
+800 000 Kč  Tesla => ano

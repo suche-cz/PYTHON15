@@ -1,0 +1,10 @@
+Dodělat kontroly,
+stačí html min max Přidat change Nastavení barvy Print stránky (pro div je potřeba print-color-adjust: exact; ) @media print {
+    div {
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+}
+
+---------------------------------------------------------
+Rozchodit elementy z bulmy+podmínky

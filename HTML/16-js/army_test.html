@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Pro přijetí musí uběhnout alespoň 12 km a zaroveň alespoň 30 kliků</h1>
+
+    <label>
+        Uběhnutá vzdálenost
+        <input type="number" id="vzdalenost">
+    </label>
+    <label>
+        Počet kliků
+        <input type="number" id="pocetKliku">
+    </label>
+
+    <button id="test1">Test Přísný</button>
+    <button id="test2">Test "Hodný"</button>
+    <!-- dodělejte jednodušší variantu pro army test kde bude stačit udělat pouze jednu část -->
+
+    <script>
+        const vzdalenostInput = document.getElementById('vzdalenost');
+        const pocetKlikuInput = document.getElementById('pocetKliku');
+        const button = document.querySelector('#test1');
+
+        button.addEventListener('click', event => {
+            const vzdalenost = Number(vzdalenostInput.value);
+            const pocetKliku = Number(pocetKlikuInput.value);
+
+            if (vzdalenost >= 12 && pocetKliku >= 30) {
+                alert('Jsi přijat');
+            } else {
+                alert('Bohužel');
+            }
+        });
+    </script>
+</body>
+
+</html>

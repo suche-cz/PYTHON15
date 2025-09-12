@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <h2>nad 100 000 nebo Tesla</h2>
+
+    <input type="number" value="100000">
+    <select>
+        <option value="skoda" selected>Škoda</option>
+        <option value="tesla">Tesla</option>
+        <option value="bwm">BMW</option>
+    </select>
+
+    <button>Check car</button>
+
+    <script>
+        const priceInput = document.querySelector('input');
+        const brandSelect = document.querySelector('select');
+        const checkButton = document.querySelector('button');
+
+        checkButton.addEventListener('click', event => {
+            const price = Number(priceInput.value);
+            const brand = brandSelect.value;
+            console.log(price, brand);
+            // price musí být větší než 100 000
+            // nebo brand je 'tesla'
+            if (price > 100000 || brand === 'tesla') {
+                alert('Tohle auto chci');
+                console.log('Tohle auto chci');
+            } else {
+                alert('Tohle auto nechci');
+                console.log('Tohle auto nechci');
+            }
+        });
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,21 @@
+boolovská algebra
+- && and
+- || or
+- !  not
+- ()
+
+false-like: false, 0, '', null, undefined, NaN
+
+truth-like: true, 1, -1, '0', 'null', ' ', + vše ostatní
+
+let test = 10 > 20;
+
+if (test || 1) {
+    //
+} else {
+    //
+}
+
+převod na boolean: Boolean
+převod na číslo: Number, parseInt, parseFloat
+převod na string: String, .toString()
