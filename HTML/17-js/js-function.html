@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        // globální scope
+        let jmeno = 'Tom';
+
+        function add(a, b, c) {
+            // lokální scope
+            // všechny věci co jsou uvnitř funkce, neexistují mimo ní
+            const result = a + b + c;
+            // jmeno = 'Jan'; // toto by funkce neměla, toto je nečistá funkce
+            return result;
+        }
+
+        function sub(a, b) {
+            const result = a - b;
+            return result;
+        }
+
+        const x = sub(10, 5);
+        console.log(x);
+
+        const y = sub(100, 40);
+        console.log(y);
+
+        /*
+        1. definice funkce (vnitřní pohled)
+        2. její použití (vnější pohled)
+        3. funkce by měla dělat jednu ucelenou věc
+        4. funkce by neměla ovlivňovat okolí
+        */
+
+        /*
+        úkol:
+        definujte funkci avg, která dokáže převzít 3 čísla (a, b, c)
+        a vypočítá a vrátí jejich pruměr
+        + otestuje na různých číslech
+        */
+
+        function avg(a, b, c) {
+            const result = (a + b + c) / 3;
+            return result;
+        }
+
+        const v1 = avg(10, 20, 50);
+        console.log(v1);
+
+
+        function vyber(karta, pin, mnozstvi) {
+            // ????
+
+            return 'xyz penize';
+        }
+
+        function objemValce(r, v) {
+            const vysledek = Math.PI * r ** 2 * v;
+            return vysledek;
+        }
+
+        const vysl = objemValce(10, 20);
+
+        // domácí úkol: 
+        // funkce pro výpočet povrchu válce
+        // 2x obsah kruhu + (výška válce * obvod kruhu)
+
+    </script>
+
+</body>
+
+</html>

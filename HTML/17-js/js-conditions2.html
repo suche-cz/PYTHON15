@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        /*
+        máme soukromý klub a příjmeme pouze osoby jejichž jméno začíná na J nebo K
+        a zároveň jsou z Prahy nebo Brna
+        a zároveň jsou starší než 17 let 
+        */
+        const jmeno = prompt('Zadej jméno');
+        const mesto = prompt('Zadej město');
+        const vek = Number(prompt('Zadej věk'));
+
+        if (vek > 17 && (jmeno.startsWith('K') || jmeno.startsWith('J')) && (mesto === 'Praha' || mesto === 'Brno')) {
+            alert('Jsi přijat');
+        }
+
+        if (vek > 17) {
+            if (jmeno.startsWith('K') || jmeno.startsWith('J')) {
+                if (mesto === 'Praha' || mesto === 'Brno') {
+                    alert('Jsi přijat znovu');
+                }
+            }
+        }
+
+        const ageCond = vek > 17;
+        const nameCond = jmeno.startsWith('K') || jmeno.startsWith('J');
+        const cityCont = mesto === 'Praha' || mesto === 'Brno';
+
+        if (ageCond && nameCond && cityCont) {
+            alert('Jsi přijat');
+        }
+
+    </script>
+
+</body>
+
+</html>

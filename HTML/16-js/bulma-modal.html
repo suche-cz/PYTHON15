@@ -53,9 +53,20 @@
     <script>
         const modal = document.querySelector('#modal-test');
         const button = document.querySelector('#btn-modal-test');
-        button.addEventListener('click', event => {
+        const bg = document.querySelector('#modal-test .modal-background');
+        const close = document.querySelector('#modal-test .modal-close');
+
+        button.addEventListener('click', openModal);
+        bg.addEventListener('click', closeModal);
+        close.addEventListener('click', closeModal);
+
+        function closeModal() {
+            modal.classList.remove('is-active');
+        }
+
+        function openModal() {
             modal.classList.add('is-active');
-        });
+        }
     </script>
 </body>
 

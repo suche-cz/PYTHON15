@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hello Bulma!</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">
+    <style>
+        .contents>div {
+            display: none;
+        }
+
+        .contents>div.is-active {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="section">
+        <div class="container">
+            <h1 class="title">
+                Hello World
+            </h1>
+            <p class="subtitle">
+                My first website with <strong>Bulma</strong>!
+            </p>
+
+            <div class="tabs">
+                <ul>
+                    <li class="is-active"><a>Pictures</a></li>
+                    <li><a>Music</a></li>
+                    <li><a>Videos</a></li>
+                    <li><a>Documents</a></li>
+                </ul>
+            </div>
+            <div class="contents">
+                <div class="is-active">Content Pictures</div>
+                <div>Content Music</div>
+                <div>Content Videos</div>
+                <div>Content Documents</div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        const tab1 = document.querySelector('.tabs ul > li:nth-child(1)');
+        const tab2 = document.querySelector('.tabs ul > li:nth-child(2)');
+        const tab3 = document.querySelector('.tabs ul > li:nth-child(3)');
+        const tab4 = document.querySelector('.tabs ul > li:nth-child(4)');
+
+        const cont1 = document.querySelector('.contents > div:nth-child(1)');
+        const cont2 = document.querySelector('.contents > div:nth-child(2)');
+        const cont3 = document.querySelector('.contents > div:nth-child(3)');
+        const cont4 = document.querySelector('.contents > div:nth-child(4)');
+
+        tab1.addEventListener('click', activate);
+        tab2.addEventListener('click', activate);
+        tab3.addEventListener('click', activate);
+        tab4.addEventListener('click', activate);
+
+        function activate(event) {
+            console.log(event.target);
+        }
+    </script>
+</body>
+
+</html>

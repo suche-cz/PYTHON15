@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+
+        const a = Number(prompt('Zadej stranu A'));
+        const b = Number(prompt('Zadej stranu B'));
+        const c = Number(prompt('Zadej stranu C'));
+
+        const max = Math.max(a, b, c);
+        const sumOfOther = (a + b + c) - max;
+
+        if (max >= sumOfOther) {
+            alert('Neplatný trojúhelník');
+        } else {
+            alert('Trojúhelník je platný');
+        }
+
+    </script>
+
+</body>
+
+</html>
