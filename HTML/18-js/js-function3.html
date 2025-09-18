@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        /*
+        recept na kuře
+        1. omyjeme ho
+        2. kořeníme ho
+        3. způsob přípravy (upect, uvařit, dusit)
+        4. vysledek přípravy
+        */
+
+        function udelejKure(zpusob) {
+            console.log('omyjeme kuře');
+            console.log('okořeníme kuře');
+            // console.log('upečeme kuře');
+            if (zpusob) {
+                zpusob();
+            } else {
+                upect();
+            }
+            console.log('hotové kuře');
+        }
+
+        function upect() {
+            console.log('upečeme kuře');
+        }
+
+        function uvarit() {
+            console.log('uvaříme kuře');
+        }
+
+        udelejKure(upect);
+        udelejKure(uvarit);
+        udelejKure();
+
+
+        // úkol:
+        // udějte funkci showAdd(a, b, show)
+        // showAdd(10, 20, alert);
+        // showAdd(10, 20, console.log);
+    </script>
+
+</body>
+
+</html>

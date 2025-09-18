@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+
+        // js funkce jsou first class
+        // funkci můžu uložit do proměnné
+        // můžu funkci předávat do jiné funkce
+
+        function test(cislo) {
+            // alert('hello from test');
+            console.log(cislo);
+            console.log(arguments);
+            // return 1;
+        }
+
+        const x = test; // můžu si funkci uložit pod jiným názvem (proměnnou)
+        // const y = test(); // y bude to co vrací test, pokud nevrací nic, tak je to undefined
+
+        function add(a, b) {
+            return a + b;
+        }
+
+        function sub(a, b) {
+            return a - b;
+        }
+
+        function operation(a, b, task) {
+            task(a, b);
+        }
+
+        operation(10, 20, add);
+        operation(10, 20, sub);
+
+
+        function prace(predmet, cinnost) {
+            cinnost(predmet);
+        }
+
+        function umyt() { }
+        function uklidit() { }
+
+        prace('hrnek', umyt);
+        prace('talíř', umyt);
+        prace('talíř', uklidit);
+
+    </script>
+
+</body>
+
+</html>

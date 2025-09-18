@@ -55,13 +55,51 @@
         const cont3 = document.querySelector('.contents > div:nth-child(3)');
         const cont4 = document.querySelector('.contents > div:nth-child(4)');
 
-        tab1.addEventListener('click', activate);
+        // tab1.addEventListener('click', event => {/*...*/ });
+        tab1.addEventListener('click', activate); // activate funkce se zavolá až dojde ke kliku
         tab2.addEventListener('click', activate);
         tab3.addEventListener('click', activate);
         tab4.addEventListener('click', activate);
+        /*
+        zavojete mi (činnost / funkce) až budete u dveří (event)
+        */
 
         function activate(event) {
-            console.log(event.target);
+            deactivateTabs();
+            deactivateContents();
+            const li = getListItem(event);
+            activateTab(li);
+            activateContent(li);
+        }
+
+        function getListItem(event) {
+            // hledá rodiče který je tag li
+            return event.target.closest('li');
+        }
+
+        function activateContent(li) {
+            if (li === tab1) cont1.classList.add('is-active');
+            if (li === tab2) cont2.classList.add('is-active');
+            if (li === tab3) cont3.classList.add('is-active');
+            if (li === tab4) cont4.classList.add('is-active');
+        }
+
+        function activateTab(li) {
+            li.classList.add('is-active');
+        }
+
+        function deactivateTabs() {
+            tab1.classList.remove('is-active');
+            tab2.classList.remove('is-active');
+            tab3.classList.remove('is-active');
+            tab4.classList.remove('is-active');
+        }
+
+        function deactivateContents() {
+            cont1.classList.remove('is-active');
+            cont2.classList.remove('is-active');
+            cont3.classList.remove('is-active');
+            cont4.classList.remove('is-active');
         }
     </script>
 </body>
