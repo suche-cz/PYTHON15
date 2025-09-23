@@ -1,0 +1,16 @@
+#layout {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+#grid-image {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: .425rem;
+    margin-top: .425rem;
+}
+
+img {
+    border-radius: .15rem;
+    display: block;
+}

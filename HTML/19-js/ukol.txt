@@ -1,0 +1,15 @@
+Pomocí document.querySelectorAll 
+vyberte všechny obrázky z inzerátu
+na této stránce: https://yauto.cz/
+
+uložte si to proměnné třeba images
+
+pak images projděte (images.forEach)
+a pomocí console.log vytiskněte
+jejich alt atributy
+
+seznam.forEach(item => {
+    console.log(item);
+})
+
+seznam.forEach(item => {})
