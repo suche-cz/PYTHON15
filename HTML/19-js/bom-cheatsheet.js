@@ -1,4 +1,4 @@
-// BOM = Browser Object Model
+// BOM = Browser Object Model (API)
 // Umožňuje komunikovat/ovládat okno/prohlížeč.
 
 // WINDOW
@@ -29,8 +29,8 @@ location.pathname('/watch', '/tag/ekonomika-29566')
 location.search('?type=new&search=text')
 location.hash('#') //kotva
 location.reload()
-location.assign("url")
-location.replace("url")
+location.assign("url") // nahradí aktuální stránku, s historii
+location.replace("url") // nahradí aktuální stránku, bez historie
 
 // HISTORY
 // z důvodu soukromí nelze získat jednotivé stránky z historie
@@ -40,8 +40,7 @@ history.go(-2)
 history.pushState({ x: 1 }, "", "/new")
 history.replaceState({}, "", "/edit")
 
-
-// SCREEN - ?
+// SCREEN
 screen.width
 screen.height
 screen.availWidth

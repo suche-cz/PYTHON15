@@ -36,8 +36,10 @@ if (x > 0) { } else { }
 switch (val) { case 1: break }
 
 // LOOPS
-for (let i = 0; i < 5; i++) { }
 while (x < 5) { }
+
+for (let i = 0; i < 5; i++) { }
+
 do { } while (x < 5)
 
 // ARRAYS

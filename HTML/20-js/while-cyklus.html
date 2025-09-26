@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        const cilovaCastka = 100000;
+        let aktualniCastka = 100;
+        let pocetMesicu = 0;
+
+        // nová aktualniCastka je vypočtena ze
+        // staré hodnoty aktualniCastka + 1000
+        // aktualniCastka = aktualniCastka + 1000;
+
+        // toto je zkrácený zápisb toho stejného
+        // aktualniCastka += 1000;
+
+        function vydelejPenize() {
+            return Math.random() * 10000;
+        }
+
+        while (true) {
+            const penizeMesic = vydelejPenize();
+            aktualniCastka += penizeMesic;
+            pocetMesicu += 1;
+
+            console.log(pocetMesicu, penizeMesic);
+
+            if (aktualniCastka >= cilovaCastka) {
+                break;
+            }
+        }
+
+        console.log('Pracoval jsem', pocetMesicu, 'měsíců');
+
+    </script>
+
+</body>
+
+</html>
