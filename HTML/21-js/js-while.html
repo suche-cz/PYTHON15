@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+
+        function printNumbers(currentValue, maxValue, addValue) {
+
+            while (currentValue < maxValue) {
+                currentValue += addValue;
+                console.log(currentValue);
+            }
+
+        }
+
+
+        function printRandomNumber() {
+            // v cyklu while 
+            // vygenerujete 5 náhodných čísel
+            // dejte to console.log
+            let counter = 0;
+
+            while (counter < 5) {
+                counter += 1;
+                console.log(Math.random());
+            }
+        }
+
+        function printNumbers2() {
+            // vytisněte čísla 1 až 1000
+            // pouze sudá čísla
+            let counter = 0;
+            while (counter < 10000) {
+                counter += 1;
+                if (counter % 100 === 0) {
+                    console.log(counter);
+                }
+            }
+        }
+
+        printNumbers2();
+
+    </script>
+
+</body>
+
+</html>

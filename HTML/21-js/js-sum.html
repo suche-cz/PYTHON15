@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <input type="number" id="value">
+    <button id="calc">Sum</button>
+
+    <script>
+        /*
+        vytvořte funkci sum(cislo), která dokáže vypočítat součet čísel
+        od 1 do cislo
+        */
+
+        /*
+        domácí úkol: udělejte součet v obráceném pořadí
+        */
+
+
+        // Bussiness logic
+
+        function sum(cislo) {
+            let result = 1;
+
+            while (true) {
+                result += cislo;
+                cislo -= 1;
+                if (cislo === 1) {
+                    break
+                }
+            }
+
+            return result;
+        }
+
+
+        // GUI - graphics user interface
+
+        const button = document.querySelector('#sum');
+        const input = document.querySelector('#value');
+        button.addEventListener('click', event => {
+            let value = Number(input.value);
+            let result = sum(value);
+            alert(result);
+        });
+
+    </script>
+
+</body>
+
+</html>

@@ -4,10 +4,11 @@ datové type
 operace (matematické, string)
 podmínky if (&&, ||, !)
 funkce
-cykly
+cykly (while, for)
 ----
 složené datové typy
 třídy
+externí knihovny
 */
 
 // DOM (pouze v prohlížeči)
