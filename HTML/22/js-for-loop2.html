@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let data = [
+            117616,
+            254220,
+            209570,
+            125546,
+            250759,
+            166119,
+            53685,
+            227017,
+            127360,
+            149669,
+            130613,
+            69915,
+        ];
+
+        let celkem = 0;
+        let minValue = Infinity;
+
+        data.forEach(item => {
+            console.log(item);
+            // celkem = celkem + item;
+            celkem += item;
+
+            if (item < minValue) {
+                minValue = item;
+            }
+
+            // najděte sumu
+            // před cyklem si vytvořit proměnnou s hodnotou 0
+            // a cyklu jej zvětšovat o danou hodnotu
+
+            // min, max, a průměr
+            // min - před cyklem si vytvořit proměnnou s hodnotou Infinity
+            // a v cyklu kontrolovat zda existuje menší hodnota, pokud ano tak proměnnou přepsat
+        });
+
+        console.log('Celkem:', celkem);
+        console.log('Průměr:', celkem / data.length);
+        console.log('Min:', minValue);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let data = ['Karel', 'Jan', 'Lenka', 'Petr'];
+
+        console.log('for..of');
+
+        for (const name of data) {
+            console.log(name); // konrétní hodnota
+        }
+
+        console.log('----------------------');
+
+        console.log('for..in');
+
+        for (const index in data) {
+            console.log(index); // index
+            console.log(data[index]);
+        }
+
+        console.log('----------------------');
+
+        console.log('forEach');
+
+        data.forEach((item, index) => {
+            console.log(item);
+            console.log(index);
+        });
+
+        console.log('----------------------');
+
+        console.log('for');
+
+        for (let i = 0; i < data.length; i++) {
+            let index = i;
+            let item = data[index];
+        }
+
+        console.log('----------------------');
+
+        console.log('while');
+
+        let whileIndex = 0;
+        while (whileIndex < data.length) {
+            let item = data[whileIndex];
+            console.log(item);
+            console.log(whileIndex);
+            whileIndex += 1;
+        }
+    </script>
+</body>
+
+</html>

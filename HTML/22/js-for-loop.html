@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+
+        let seznam = ["Jan", "Petra", "Karel"]; // Array
+
+        // pro každý prvek toho seznamu udělám ...
+        seznam.forEach(item => {
+            console.log(item);
+            console.log(item.length);
+            console.log(item.includes('e'));
+
+            if (item.length > 4) {
+                console.log('Dlouhé jméno');
+            } else {
+                console.log('Krátké jméno');
+            }
+        });
+
+        // na webu do konsole yauto.cz
+        const auta = document.querySelectorAll('.IOL a');
+
+        function getCena(text) {
+            text = text.replaceAll('\u00A0', '').replace('Kč', '');
+            return Number(text);
+        }
+
+        let celkem = 0;
+        let maxCena = 0;
+        let minCena = Infinity;
+
+        auta.forEach(link => {
+            let cena = link.querySelector('.cena');
+            let cena_value = getCena(cena.textContent);
+            celkem += cena_value;
+            if (cena_value > maxCena) {
+                maxCena = cena_value;
+            }
+            if (cena_value < minCena) {
+                minCena = cena_value;
+            }
+        });
+
+        console.log(celkem);
+        console.log(maxCena);
+
+    </script>
+
+</body>
+
+</html>
