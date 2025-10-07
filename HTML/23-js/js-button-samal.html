@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="buttons">
+        <button>0</button>
+        <button>0</button>
+        <button>0</button>
+    </div>
+    <script>
+        /*pro kazde tlacitko pridejte udalost onclick
+        pokud na nej klineme zvetsime mu cislo o 1*/
+        const buttons = document.querySelectorAll('button');
+
+        for (let i = 0; i < buttons.length; i++) {
+            let value = 0;
+            const btn = buttons[i];
+
+            btn.addEventListener('click', e => {
+                console.log('click: ', btn);
+                console.log('index:', i);
+                value += 1;
+                btn.textContent = value;
+            });
+        }
+    </script>
+
+</body>
+
+</html>

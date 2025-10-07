@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hello Bulma!</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">
+    <style>
+        .contents>div {
+            display: none;
+        }
+
+        .contents>div.is-active {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="section">
+        <div class="container">
+            <h1 class="title">
+                Hello World
+            </h1>
+            <p class="subtitle">
+                My first website with <strong>Bulma</strong>!
+            </p>
+
+            <div class="tabs">
+                <ul>
+                    <li class="is-active"><a>Pictures</a></li>
+                    <li><a>Music</a></li>
+                    <li><a>Videos</a></li>
+                    <li><a>Documents</a></li>
+                    <li><a>TEST 123</a></li>
+                    <li><a>TEST 123</a></li>
+                    <li><a>TEST 123</a></li>
+                    <li><a>TEST 123</a></li>
+                </ul>
+            </div>
+            <div class="contents">
+                <div class="is-active">Content Pictures</div>
+                <div>Content Music
+                    <div>Hello div</div>
+                </div>
+                <div>Content Videos</div>
+                <div>Content Documents</div>
+                <div>Content TEST</div>
+                <div>Content TEST</div>
+                <div>Content TEST</div>
+                <div>Content TEST</div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        /*
+        1. vybereme tabs a contents
+        2. pomocí cyklu přidáme click event na tabs
+        3. nastavit is-active podle toho na co klikneme
+        4. přepínat content podle tabu
+        */
+
+        const tabs = document.querySelectorAll('.tabs li');
+        const contents = document.querySelectorAll('.contents > div');
+        let activeIndex = 0;
+
+        for (let i = 0; i < tabs.length; i++) {
+            const tab = tabs[i];
+
+            tab.addEventListener('click', e => {
+                console.log('click:', tab);
+                console.log('index:', i);
+                console.log('activeIndex:', activeIndex);
+
+                const lastActiveTab = tabs[activeIndex];
+                const lastActiveCon = contents[activeIndex];
+                lastActiveTab.classList.remove('is-active');
+                lastActiveCon.classList.remove('is-active');
+
+                tab.classList.add('is-active');
+                contents[i].classList.add('is-active');
+
+                activeIndex = i;
+                console.log('activeIndex:', activeIndex);
+            });
+        }
+
+
+
+    </script>
+</body>
+
+</html>

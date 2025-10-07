@@ -33,13 +33,7 @@
                     <li><a>Music</a></li>
                     <li><a>Videos</a></li>
                     <li><a>Documents</a></li>
-                    <li><a>4</a></li>
-                    <li><a>5</a></li>
-                    <li><a>6</a></li>
-                    <li><a>7</a></li>
-                    <li><a>8</a></li>
-                    <li><a>9</a></li>
-                    <li><a>10</a></li>
+                    <li><a>Test</a></li>
                 </ul>
             </div>
             <div class="contents">
@@ -47,13 +41,7 @@
                 <div>Content Music</div>
                 <div>Content Videos</div>
                 <div>Content Documents</div>
-                <div>4</div>
-                <div>5</div>
-                <div>6</div>
-                <div>7</div>
-                <div>8</div>
-                <div>9</div>
-                <div>10</div>
+                <div>Test</div>
             </div>
         </div>
     </section>
@@ -63,17 +51,20 @@
         const tab2 = document.querySelector('.tabs ul > li:nth-child(2)');
         const tab3 = document.querySelector('.tabs ul > li:nth-child(3)');
         const tab4 = document.querySelector('.tabs ul > li:nth-child(4)');
+        const tab5 = document.querySelector('.tabs ul > li:nth-child(5)');
 
         const cont1 = document.querySelector('.contents > div:nth-child(1)');
         const cont2 = document.querySelector('.contents > div:nth-child(2)');
         const cont3 = document.querySelector('.contents > div:nth-child(3)');
         const cont4 = document.querySelector('.contents > div:nth-child(4)');
+        const cont5 = document.querySelector('.contents > div:nth-child(5)');
 
         // tab1.addEventListener('click', event => {/*...*/ });
         tab1.addEventListener('click', activate); // activate funkce se zavolá až dojde ke kliku
         tab2.addEventListener('click', activate);
         tab3.addEventListener('click', activate);
         tab4.addEventListener('click', activate);
+        tab5.addEventListener('click', activate);
         /*
         zavojete mi (činnost / funkce) až budete u dveří (event)
         */
@@ -96,6 +87,7 @@
             if (li === tab2) cont2.classList.add('is-active');
             if (li === tab3) cont3.classList.add('is-active');
             if (li === tab4) cont4.classList.add('is-active');
+            if (li === tab5) cont5.classList.add('is-active');
         }
 
         function activateTab(li) {
@@ -107,6 +99,7 @@
             tab2.classList.remove('is-active');
             tab3.classList.remove('is-active');
             tab4.classList.remove('is-active');
+            tab5.classList.remove('is-active');
         }
 
         function deactivateContents() {
@@ -114,6 +107,7 @@
             cont2.classList.remove('is-active');
             cont3.classList.remove('is-active');
             cont4.classList.remove('is-active');
+            cont5.classList.remove('is-active');
         }
     </script>
 </body>
