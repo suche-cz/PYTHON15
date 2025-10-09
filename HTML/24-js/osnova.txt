@@ -1,0 +1,4 @@
+krokování: debug mode
+pole []
+objekty {}
+OOP
