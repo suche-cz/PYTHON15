@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <textarea id="images"></textarea>
+    <button id="button">Add</button>
+    <button id="remove-all">Remove all</button>
+    <button id="remove-first">Remove first</button>
+    <button id="remove-last">Remove last</button>
+    <div id="gallery"></div>
+
+    <script>
+        // https://picsum.photos/200
+
+        const text = document.getElementById('images');
+        const button = document.getElementById('button');
+        const gallery = document.getElementById('gallery');
+        const removeAll = document.getElementById('remove-all');
+        const images = [];
+
+        button.addEventListener('click', e => {
+            addImage();
+        });
+
+        removeAll.addEventListener('click', e => {
+            images.forEach((item, index) => {
+                item.remove();
+            });
+
+            images.splice(0, images.length);
+        });
+
+        function addImage() {
+            const newImg = document.createElement('img');
+            newImg.src = text.value;
+            gallery.appendChild(newImg);
+            images.push(newImg);
+        }
+
+    </script>
+</body>
+
+</html>

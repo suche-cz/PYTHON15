@@ -47,7 +47,7 @@ const data = [1, 2, 3]
 // odebrat poslední 2 prvky
 // získat prvek na indexu 1
 // získat předposlední prvek
-data.push('x') // přidá ''
+data.push('x') // přidá 'x'
 data.pop() // odstraní poslední prvek
 data.length // vrátí počet prvků
 data[0] // vrátí prvek na první pozici (na nultém indexu)
@@ -61,7 +61,7 @@ data.indexOf(value) // vrátí index hodnoty nebo - 1
 data.slice(start, end) // vrátí část array bez úpravy originálu
 data.splice(start, deleteCount, ...items) // odstraní a / nebo přidá prvky přímo do originálu
 data.concat(array2) // spojí dva(nebo více) arraye
-data.sort(fn) // seřadí prvky(alfabeticky nebo vlastní funkcí)
+data.sort(fn) // seřadí prvky(alfabeticky nebo vlastní funkcí), pro čísla (a, b) => a - b
 data.reverse() // obrátí pořadí prvků v array
 
 data.find(fn) // vrátí první prvek, který splní podmínku
@@ -73,3 +73,18 @@ data.flat(depth) // "splácne" vnořené arraye do jednoho
 data.map(fn) // vrátí nový array s výsledky funkce pro každý prvek
 data.filter(fn) // vrátí nový array s prvky, které projdou podmínkou
 data.reduce(fn, initial) // redukuje array na jednu hodnotu
+
+
+
+
+function test(a, b) {
+    return a - b;
+}
+
+(a, b) => { return a - b; }
+(a, b) => a - b;
+(a) => { }
+a => { }
+() => { }
+item => { }
+event => { }
