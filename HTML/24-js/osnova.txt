@@ -2,3 +2,23 @@ krokování: debug mode
 pole []
 objekty {}
 OOP
+
+----------------------------------------------------
+
+
+samostatná práce: 
+vytvořte objekt, který bude reprezentovat
+libovolný objekt z realného světa
+příklady:
+- struktura firmy
+- součásti auta, pc, telefonu ...
+- organismus
+- vztahy, rozvrhy, struktury ...
+
+Petr: knihkupectví (prodejny, knihy)
+Samal: školní předměty (nazev, učitel, kredity)
+Vojta: škoda (škola, třídy ...)
+Michal: firma (nazev, role, oddělení...)
+Nikita: spisovatele (jmeno, narození, dílo...)
+Gabča: ???
+Jirka: ???

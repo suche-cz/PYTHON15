@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const x = {
+            'key': [
+                { 'name': 'Suche', 'id': 1 },
+                { 'name': 'Suche', 'id': 2 },
+                { 'name': 'Suche', 'id': 3 },
+            ],
+            'some_other': { 'key': 'some' },
+        };
+
+        const y = {
+            1: { 'name': 'Suche' },
+            2: { 'name': 'Suche' },
+            3: { 'name': 'Suche' },
+        }
+
+
+        const planetEarth = {
+            'name': 'Earth',
+            'population': 8000000000,
+            'continets': [
+                {
+                    'name': 'Africa', 'countries': [
+                        { 'name': 'Egypt', 'population': 9999, 'capital': 'Cairo' },
+                        { 'name': 'JAR', 'population': 9999, 'capital': 'Johanesburg' },
+                    ]
+                },
+                {
+                    'name': 'Asia', 'countries': [
+                        { 'name': 'China', 'population': 9999, 'capital': 'Peking' },
+                        { 'name': 'Japan', 'population': 9999, 'capital': 'Tokio' },
+                    ]
+                },
+                {
+                    'name': 'Europe', 'countries': [
+                        { 'name': 'Italy', 'population': 9999, 'capital': 'Rome' },
+                        { 'name': 'Spain', 'population': 9999, 'capital': 'Madrid' },
+                    ]
+                },
+            ],
+        };
+
+        const planetMars = {
+            'name': 'Mars',
+            'population': 0,
+            'continets': [],
+        }
+
+        function createElement(type, text) {
+            const el = document.createElement(type);
+            el.textContent = text;
+            document.body.appendChild(el);
+        }
+
+        // createElement('h2', 'text');
+
+        function renderPlanet(planet) {
+            console.log('----- RENDERING PLANET ------------------------------');
+
+            createElement('h2', planet.name);
+            createElement('p', 'population: ' + planet.population + ', continents: ' + planet.continets.length);
+
+            console.log(planet.name);
+            console.log(planet.population);
+            console.log(planet.continets.length);
+            planet.continets.forEach(cont => {
+                console.log(cont.name);
+                createElement('h3', cont.name);
+
+                cont.countries.forEach(country => {
+                    console.log(country.name, country.population, country.capital);
+                });
+            });
+        }
+
+        renderPlanet(planetEarth);
+        renderPlanet(planetMars);
+
+
+    </script>
+</body>
+
+</html>

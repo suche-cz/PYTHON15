@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // Problémy:
+        // 1. roste velikost při opakování data
+        // 2. při úpravě dat musíme uravit vícekrát
+        // 3. nejednoznažnost, je Petr Novotný co napsal XYZ stejná osoba jako
+        // Petr Novotný co napsal Bajné město ?
+        // shoda jména ale můžou to být 2 různé osoby
+        // 4. v datech o knížká jsou informace, které se vůnec netýkají knížek
+
+
+        const books = [
+            {
+                'name': 'Harry Potter', 'year': 1979, 'autors': [
+                    { 'name': 'J. K. Rowling', 'nationality': 'en', 'birthYear': 1960 },
+                ]
+            },
+            {
+                'name': 'Lord of the Rings', 'year': 1869, 'autors': [
+                    { 'name': 'J. R. R. Tolkien', 'nationality': 'en', 'birthYear': 1960 },
+                ]
+            },
+            {
+                'name': 'Hobit', 'year': 1879, 'autors': [
+                    { 'name': 'J. R. R. Tolkien', 'nationality': 'en', 'birthYear': 1960 },
+                ]
+            },
+        ];
+
+
+        // --------------------------------------------
+
+
+        const books2 = [
+            {
+                'name': 'Harry Potter', 'year': 1979, 'autors': [1]
+            },
+            {
+                'name': 'Lord of the Rings', 'year': 1869, 'autors': [2]
+            },
+            {
+                'name': 'Hobit', 'year': 1879, 'autors': [2, 3]
+            },
+        ];
+
+        const autors = {
+            1: { 'name': 'J. K. Rowling', 'nationality': 'en', 'birthYear': 1960 },
+            2: { 'name': 'J. R. R. Tolkien', 'nationality': 'en', 'birthYear': 1960 },
+            3: { 'name': 'Some other guy', 'nationality': 'en', 'birthYear': 1950 },
+        }
+    </script>
+</body>
+
+</html>

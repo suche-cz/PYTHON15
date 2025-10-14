@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const data1 = ['Karel', 'Nový', 31, 'Praha', 'programátor'];
+
+        const data2 = ['John', 'Bruce', 10, 'Ontario', 'driver'];
+
+        const data3 = {
+            // key: value
+            // klíč: hodnota
+            // v klíči: a-zA-Z0-9 _
+            'name': 'John',
+            "surname": 'Bruce',
+            'experience_years': 10,
+            'working_place': 'Ontario',
+            'previous_work': 'driver',
+            'moje nová práce': 'driver',
+        };
+
+        const data4 = {
+            name: 'John',
+            surname: 'Bruce'
+        };
+
+        // tečková notace
+        console.log(data3.name);
+        console.log(data3.previous_work);
+        // přes string název klíče
+        console.log(data3['previous_work']);
+
+        // nastavení nebo modifikace klíče
+        data4['age'] = 10;
+        data4.city = 'Prague';
+        data4.name = 'Suche';
+        // mazání klíče
+        delete data4['surname'];
+        delete data4.name;
+
+        // CRUD - C(create), R(retrieve), U(update), D(delete)
+
+        // iterace objektu
+        const keys = Object.keys(data3);
+
+        keys.forEach(key => {
+            console.log(key, data3[key]);
+        });
+
+        // 1. for...in
+        for (const key in data3) console.log(key, data3[key]);
+        // 2. Object.keys
+        Object.keys(data3).forEach(key => console.log(key, data3[k]));
+        // 3. Object.values
+        Object.values(data3).forEach(value => console.log(value));
+        // 4. Object.entries
+        Object.entries(data3).forEach(([key, value]) => console.log(key, value));
+
+    </script>
+</body>
+
+</html>
