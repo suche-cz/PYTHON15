@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>What is "this"</h1>
+
+    <button onclick="console.log(this);">Click me</button>
+    <button id="btn">Click me</button>
+    <button id="btn2">Click me 2</button>
+
+    <script>
+        // globální úroveň 
+        // this = window v prohložeči
+        console.log(this);
+        // přes globální objekt window můžu nstavit globální promměnné
+        window.xyz = 10;
+
+        // xyz
+        // window.xyz;
+
+        function test() {
+            // funkce, která leží na globální úrovni
+            // this = window
+            console.log(this);
+        }
+
+        const myCode = {
+            A: 10,
+            B: 20,
+
+            test: function () {
+                console.log(this);
+                console.log(this.A);
+                console.log(this.B);
+            }
+        };
+
+        const anotherBtn = document.querySelector('#btn');
+        anotherBtn.addEventListener('click', function (event) {
+            // this je element
+            console.log(this);
+            console.log(event.target);
+        });
+
+        const anotherBtn2 = document.querySelector('#btn2');
+        // anonymní funkce
+        anotherBtn2.addEventListener('click', event => {
+            // this se vezme z vnějšího kontextu
+            console.log(this);
+            console.log(event.target);
+        });
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <button id="btn">BUTTON</button>
+
+    <script>
+        const myCode = {
+            VALUE: 10,
+            NAME: 'Pavla',
+
+            init: function (button) {
+                button.addEventListener('click', event => {
+                    const xyz = 10;
+                    console.log(this);
+                    console.log(this.VALUE);
+                    console.log(this.NAME);
+                    console.log(button); //
+                    console.log(event.target); // také button
+                });
+            }
+        };
+
+        const btn = document.getElementById('btn');
+        myCode.init(btn);
+    </script>
+
+</body>
+
+</html>

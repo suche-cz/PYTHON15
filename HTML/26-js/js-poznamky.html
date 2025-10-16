@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        google_tag_manager = { id: 1000, url: '' }
+    </script>
+    <script>
+        youtube_context = { id: 1000, url: '' }
+    </script>
+    <script>
+        my_site = { id: 1000, url: '' }
+
+        const ID = 1000;
+        let abc = 100;
+    </script>
+</head>
+
+<body>
+    <script>
+
+        // 1. objekty slouží pro definici dat
+
+        const user = {
+            name: 'Suche',
+            age: 30,
+            height: 170,
+            weight: 60,
+        };
+
+        const data = {
+            meta: { date: '2025-10-01', autor: 'Google Inc.' },
+            data: [
+                {
+                    id: 1, name: 'Suche', age: 30, height: 170, weight: 60, workHistory: [
+                        { name: 'IT', money: 50000, from: '2025-10-01', to: '2025-10-01' },
+                        { name: 'IT', money: 50000, from: '2025-10-01', to: '2025-10-01' },
+                        { name: 'IT', money: 50000, from: '2025-10-01', to: '2025-10-01' },
+                        { name: 'IT', money: 50000, from: '2025-10-01', to: '2025-10-01' },
+                        { name: 'IT', money: 50000, from: '2025-10-01', to: '2025-10-01' },
+                    ]
+                },
+                { id: 2, name: 'Suche', age: 30, height: 170, weight: 60 },
+                { id: 3, name: 'Suche', age: 30, height: 170, weight: 60 },
+                { id: 4, name: 'Suche', age: 30, height: 170, weight: 60 },
+                { id: 5, name: 'Suche', age: 30, height: 170, weight: 60 },
+            ],
+        }
+
+        // 2. pro vytvoření Namespace
+        // namespace = jmenný prostor
+        // oddělení nějaké oblasti do samostatného celku
+
+        const jazyk1 = 'český jazyk';
+        const jazyk2 = 'jazyk v ústech';
+
+        // jmenné prostory pro fitness, programování
+
+        const fitness = {
+            age: [15, 80],
+            requirements: ['healthy body', 'motivation', 'knowledge'],
+            anatomy: {},
+
+            train: function () { },
+            info: function () { },
+        };
+
+        const programovani = {
+            age: [10, 80],
+            requirements: ['education', 'motivation', 'knowledge'],
+            hw: {},
+            sw: {},
+
+            train: function () { },
+            educate: function () { },
+            info: function () { },
+        };
+
+
+        console.log(programovani.age);
+
+        programovani.train();
+
+        fitness.train();
+    </script>
+</body>
+
+</html>

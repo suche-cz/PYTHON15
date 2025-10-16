@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" content="light dark">
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+    <title>Images</title>
+</head>
+
+
+<body>
+    <main class="container">
+        <h1>Images</h1>
+
+        <section>
+            <fieldset role="group">
+                <input type="url" placeholder="URL">
+                <input type="text" placeholder="Title">
+                <button type="submit">Add</button>
+            </fieldset>
+        </section>
+
+        <section>
+            <div class="grid" id="images" style="grid-template-columns: repeat(3, 1fr);"></div>
+        </section>
+    </main>
+
+    <script>
+        const urlInput = document.querySelector('[type="url"]');
+        const textInput = document.querySelector('[type="text"]');
+        const addButton = document.querySelector('[type="submit"]');
+        const imageGrid = document.querySelector('#images');
+        const imageList = [];
+
+        addButton.addEventListener('click', event => {
+            const img = document.createElement('img');
+            img.src = urlInput.value;
+            img.alt = textInput.value;
+            imageGrid.appendChild(img);
+        });
+    </script>
+</body>
+
+</html>

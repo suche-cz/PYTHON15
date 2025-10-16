@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" content="light dark">
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+    <title>Images</title>
+</head>
+
+
+<body>
+    <main class="container">
+        <h1>Images</h1>
+
+        <section>
+            <fieldset role="group">
+                <input type="url" placeholder="URL">
+                <input type="text" placeholder="Title">
+                <button type="submit">Add</button>
+            </fieldset>
+        </section>
+
+        <section>
+            <div class="grid" id="images" style="grid-template-columns: repeat(3, 1fr);"></div>
+        </section>
+    </main>
+
+    <script>
+        const ImageManager = {
+            urlInput: document.querySelector('[type="url"]'),
+            textInput: document.querySelector('[type="text"]'),
+            addButton: document.querySelector('[type="submit"]'),
+            imageGrid: document.querySelector('#images'),
+            imageList: [
+                { url: 'https://s.yauto.cz/m/obrazky/p3k/0046/peugeot-308-S-1206483-e15872f43b0e1ca919ee38f202c0217a.jpg', text: '' },
+                { url: 'https://s.yauto.cz/m/obrazky/soh/0109/skoda-octavia-S-1206480-142df68bf190bec904aa1b6ae6bde00e.jpg', text: '' }
+            ],
+
+            init: function () {
+                this.renderFromList();
+
+                this.addButton.addEventListener('click', event => {
+                    const imageData = {
+                        url: this.urlInput.value,
+                        text: this.textInput.value
+                    };
+                    this.add(imageData);
+                });
+            },
+
+            // API: add, render
+
+            add: function (imageData) {
+                this.imageList.push(imageData);
+                this.render(imageData);
+            },
+
+            renderFromList: function () {
+                this.imageList.forEach(imageData => {
+                    this.render(imageData);
+                });
+            },
+
+            // nízko úrovňové funkce
+
+            render: function (imageData) {
+                const img = document.createElement('img');
+                img.src = imageData.url;
+                img.alt = imageData.text;
+                this.imageGrid.appendChild(img);
+            },
+        };
+
+        ImageManager.init();
+    </script>
+</body>
+
+</html>
