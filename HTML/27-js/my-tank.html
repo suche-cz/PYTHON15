@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .tank {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        .tank-body {
+            width: 40px;
+            height: 25px;
+            background: #000;
+        }
+
+        .tank-cannon {
+            width: 40px;
+            height: 7px;
+            background: #333;
+            position: absolute;
+            top: 9px;
+            left: 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="tank" id="my-tank">
+        <div class="tank-body"></div>
+        <div class="tank-cannon"></div>
+    </div>
+
+    <script>
+
+        const myTank = {
+            element: document.querySelector('#my-tank'),
+            left: 0,
+            top: 0,
+
+            changeTop: function (distance) {
+                this.top += distance;
+                this.element.style.top = this.top + 'px';
+            },
+
+            changeLeft: function (distance) {
+                this.left += distance;
+                this.element.style.left = this.left + 'px';
+            }
+        };
+
+        document.addEventListener('keydown', e => {
+            const speed = 10;
+            if (e.key === 'ArrowLeft') { myTank.changeLeft(-speed); }
+            else if (e.key === 'ArrowRight') { myTank.changeLeft(speed); }
+            else if (e.key === 'ArrowUp') { myTank.changeTop(-speed); }
+            else if (e.key === 'ArrowDown') { myTank.changeTop(speed); }
+        });
+    </script>
+
+</body>
+
+</html>

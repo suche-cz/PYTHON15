@@ -1,0 +1,33 @@
+OOP - Object oriented programing
+- objektově orientované programování
+
+- modelování realných problému do modelu kódu
+- abstaktní věci
+
+
+Příklady:
+
+Robot:
+vlastnosti (atributy, informace, odkazy na další odkazy)
+- jmeno
+- model
+- baterie (další objekt) - komplexní objekt je složen z dalších objektů
+chování (metody, funkce, co ta daná věc dělá)
+- jít dopředu
+- otočit hlavu (složitá instrukce může být složena z dílčích instrukcí)
+- zvednout ruku
+
+
+3D pc hra střílečka:
+
+postavička (může vystřelit ze zbraně)
+drží zbraň - zasobník nábojů
+náboj - také objekt
+
+výstřel - je také objekt, který se naprogamovat
+
+
+Název objektu
+- vlastnosti objektu
+- chování objektu
+
