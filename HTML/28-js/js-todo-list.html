@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hello Bulma!</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+    <style>
+        article.is-done {
+            text-decoration: line-through;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="section">
+        <div class="container">
+            <h1 class="title">
+                Hello World
+            </h1>
+            <p class="subtitle">
+                My first website with <strong>Bulma</strong>!
+            </p>
+
+            <div id="task-list"></div>
+        </div>
+    </section>
+
+    <script>
+        /*
+        Objeková Analýza
+        
+        class TodoItem
+        - vlastnoti
+            - text (string)
+            - done (true/false)
+
+        - chování (metody, co to umí)
+            - markDone
+            - markUnDone
+            - delete
+            - updateText
+            - render
+        */
+
+        class TodoItem {
+            constructor(text) {
+                this.text = text;
+                this.done = false;
+                this.html = this.render();
+                this.updateHtml();
+            }
+
+            updateText(newText) {
+                this.text = newText;
+            }
+
+            render() {
+                const div = document.createElement('div');
+                div.innerHTML = `
+                <article>
+                    <input type="checkbox">
+                    <div class="text">${this.text}</div>
+                </article>
+                `;
+
+                const html = div.firstElementChild;
+
+                const checkbox = html.querySelector('[type="checkbox"]');
+                checkbox.addEventListener('change', e => {
+                    this.done = checkbox.checked;
+                    this.updateHtml();
+                });
+
+                return html;
+            }
+
+            updateHtml() {
+                const textElement = this.html.querySelector('.text');
+                textElement.textContent = this.text;
+
+                if (this.done) {
+                    this.html.classList.add('is-done');
+                } else {
+                    this.html.classList.remove('is-done');
+                }
+            }
+
+            delete() { }
+        }
+
+        const taskList = document.getElementById('task-list');
+
+        const item1 = new TodoItem('Task 1');
+        const item2 = new TodoItem('Task 2');
+        const item3 = new TodoItem('Task 3');
+
+        taskList.appendChild(item1.html);
+        taskList.appendChild(item2.html);
+        taskList.appendChild(item3.html);
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,8 @@
+stav stránek
+1. developer profile page
+2. vlastní vybraná stránka
+- vyřešit css
+- vyřešit js
+
+Probrat nějaké JS knihovny
+

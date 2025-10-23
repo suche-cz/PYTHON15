@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hello Bulma!</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">
+</head>
+
+<body>
+    <section class="section">
+        <div class="container">
+            <h1 class="title">
+                Hello World
+            </h1>
+            <p class="subtitle">
+                My first website with <strong>Bulma</strong>!
+            </p>
+
+            <div class="tabs">
+                <ul>
+                    <li aria-controls="content1" class="is-active"><a>Pictures</a></li>
+                    <li aria-controls="content2"><a>Music</a></li>
+                    <li aria-controls="content3"><a>Videos</a></li>
+                    <li aria-controls="content4"><a>Documents</a></li>
+                    <li aria-controls="content5"><a>New tab</a></li>
+                </ul>
+            </div>
+            <div class="contents">
+                <div id="content1">Content for Pictures</div>
+                <div id="content2" class="is-hidden">Content for Music</div>
+                <div id="content3" class="is-hidden">Content for Videos</div>
+                <div id="content4" class="is-hidden">Content for Documents</div>
+                <div id="content5" class="is-hidden">Content for new</div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // definice třídy
+        class Tab {
+            constructor(el) {
+                this.el = el;
+                const contentId = el.getAttribute('aria-controls');
+                this.content = document.getElementById(contentId);
+            }
+
+            activate() {
+                this.el.classList.add('is-active');
+                this.content.classList.remove('is-hidden');
+            }
+
+            deactivate() {
+                this.el.classList.remove('is-active');
+                this.content.classList.add('is-hidden');
+            }
+        }
+
+        // tvorba instance ze třídy
+        const allItems = document.querySelectorAll('ul li');
+        let activeTab = null;
+
+        allItems.forEach((item, index) => {
+            const tab = new Tab(item);
+            if (!index) activeTab = tab;
+
+            item.addEventListener('click', e => {
+                activeTab.deactivate();
+                tab.activate();
+                activeTab = tab;
+            });
+        });
+    </script>
+</body>
+
+</html>

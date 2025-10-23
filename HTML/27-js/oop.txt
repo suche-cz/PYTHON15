@@ -30,4 +30,3 @@ výstřel - je také objekt, který se naprogamovat
 Název objektu
 - vlastnosti objektu
 - chování objektu
-
