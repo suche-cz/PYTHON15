@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #menu {
+            display: none;
+        }
+
+        body.menu-active #menu {
+            display: block;
+        }
+
+        body.menu-active .hide-on-menu {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div style="display: flex; gap: .5rem">
+        <button onclick="document.body.classList.toggle('menu-active');">Button</button>
+
+        <div class="hide-on-menu">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+            <a href="#">Link 4</a>
+        </div>
+
+    </div>
+
+
+    <div id="menu">Menu</div>
+
+    <div class="hide-on-menu">content</div>
+
+
+    <div class="hide-on-menu">
+        <h2>next item</h2>
+    </div>
+</body>
+
+</html>

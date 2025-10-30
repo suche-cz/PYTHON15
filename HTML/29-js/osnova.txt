@@ -4,5 +4,30 @@ stav stránek
 - vyřešit css
 - vyřešit js
 
+debug ladění scriptu
+fetch, custom events
+
 Probrat nějaké JS knihovny
 
+// asynchonní volání http požadavku
+// Promise -> příslib
+fetch('https://pokeapi.co/api/v2/pokemon?limit=10&offset=0')
+.then(resp => resp.json())
+.then(data => {
+    console.log(data);
+});
+
+
+// Vytvoření a dispatch vlastního eventu
+const event = new CustomEvent("myEvent", {
+    detail: { key: "value" }, // volitelná data
+    bubbles: true,            // zda má bublat DOMem
+    cancelable: true          // zda lze zrušit
+});
+
+document.dispatchEvent(event);
+
+// Posluchač
+document.addEventListener("myEvent", (e) => {
+    console.log("Custom event fired:", e.detail);
+});

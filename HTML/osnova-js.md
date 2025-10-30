@@ -69,4 +69,3 @@
     * Jednoduchý kalkulátor
     * Dynamická galerie obrázků
 
-Chceš, abych ti z toho udělal **stručný učební plán po lekcích** vhodný pro výuku webového JS?
