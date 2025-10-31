@@ -25,9 +25,9 @@ const event = new CustomEvent("myEvent", {
     cancelable: true          // zda lze zrušit
 });
 
-document.dispatchEvent(event);
+document.dispatchEvent(event); // spuštění eventu na document, ale lze zavolat na i na elementu
 
-// Posluchač
+// Nasluchač
 document.addEventListener("myEvent", (e) => {
     console.log("Custom event fired:", e.detail);
 });
