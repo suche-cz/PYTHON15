@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        function divide(a, b) {
+            if (b === 0) throw new Error('Invalid divider');
+
+            return a / b;
+        }
+
+        try {
+            // blok kódu pro vyzkoušení
+            // pozitivní (ideální) scénář 
+            const result = divide(10, 0);
+        } catch (error) {
+            // odchycení potencionální
+            // reakce na danou chybu
+            console.log(error);
+            alert('neplatné hodnoty');
+        } finally {
+            // volitelná součást
+            // pro činnosti na konci
+        }
+
+    </script>
+
+</body>
+
+</html>

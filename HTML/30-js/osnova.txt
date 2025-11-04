@@ -1,2 +1,36 @@
-try - catch
+try {} catch {}
+throw new Error();
+
 externí knihovny
+- jQuery
+- Leaflet
+- chart.js
+- PhotoSwiper
+
+
+TypeScript vs JS
+
+// dynimicky typovaný jazyk
+
+function soucet(a, b) {
+    return  a + b;
+}
+
+soucet(1, 2) // 3
+soucet('1', '2') // 12
+soucet(1, '2') // 12
+soucet([], 'x'); // '[Object]x'
+
+// staticky typovaný jazyk
+
+function soucet(a: int, b: int):int {
+    return  a + b;
+}
+
+soucet(1, 2) // 3
+soucet('1', '2') // error
+soucet(1, '2') // error
+soucet([], 'x'); // error
+
+def source(a: int, b: int) -> int:
+    return a + b

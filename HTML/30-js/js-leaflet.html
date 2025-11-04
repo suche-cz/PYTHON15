@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+        crossorigin="" />
+</head>
+
+<body>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20482.407406897488!2d14.433394164233398!3d50.08065250163688!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470b95c0c7e73dc9%3A0x43fdec320045d875!2sFUZE!5e0!3m2!1scs!2scz!4v1762284261404!5m2!1scs!2scz" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    <iframe src="https://maps.google.com/maps?q=35.856737, 10.606619&z=15&output=embed" width="360" height="270" frameborder="0" style="border:0"></iframe>
+
+    <div id="map" style="height: 400px;"></div>
+
+    <!-- Make sure you put this AFTER Leaflet's CSS -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+        crossorigin=""></script>
+
+    <script>
+        const map = L.map('map').setView([50.0826629, 14.435625], 13);
+
+        L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            maxZoom: 19,
+            attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+        }).addTo(map);
+
+
+        var marker = L.marker([50.0826629, 14.435625]).addTo(map);
+
+        var marker2 = L.marker([50.026629, 14.35625]).addTo(map);
+
+        marker
+            .bindPopup('<b>Hello world!</b><br>I am a popup. <a href="https://suche.cz" target="_blank">Suche.cz</a><div><img src="https://s.yauto.cz/s/yauto/img/znacky/skoda-logo.webp" style="max-width: 100%;"></div>')
+        //.openPopup();
+    </script>
+
+</body>
+
+</html>

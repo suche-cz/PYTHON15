@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const jmeno = prompt('Zadej jméno: ');
+        const vek = prompt('Zadej věk: ');
+
+        function printData(jmeno, vek) {
+            const num = new Number(vek);
+            if (!vek || isNaN(num)) {
+                throw new Error('invalid value for vek');;
+            }
+
+            // zkontrolovat zda je vek cislo
+            // nebo převest na cislo
+            // pokud to není císlo: vyhodit chybu
+            alert(`${jmeno}: ${vek}`);
+        }
+
+        // tuto funkci ošetřit pomocí try-catch
+        try {
+            printData(jmeno, vek);
+        } catch {
+            alert('nevalidní hodnoty');
+        }
+
+    </script>
+</body>
+
+</html>
