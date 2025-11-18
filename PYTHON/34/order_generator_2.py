@@ -2,25 +2,39 @@ actual_number = 0
 max_number = 999
 
 
+def command_exit():
+    print('Ukončuji program')
+    exit()
+
+def command_reset():
+    # global se znažíme vyhnout
+    global actual_number
+    print('Resetuji pořadník')
+
+    actual_number = 0
+
+def command_next():
+    # global se znažíme vyhnout
+    global actual_number
+    global max_number
+
+    if actual_number < max_number:
+        actual_number += 1
+    else:
+        actual_number = 1
+
+    print('Dostaváte číslo:', actual_number)
+
+
 while True:
     command = input('Zadejte příkaz: ')
 
     if command == 'exit':
-        print('Ukončuji program')
-        exit() # break by ukončil cyklus 
-        
+        command_exit()
     elif command == 'reset':
-        print('Resetuji pořadník')
-        actual_number = 0
-
+        command_reset()
     elif command == 'next':
-        if actual_number < max_number:
-            actual_number += 1
-        else:
-            actual_number = 1
-
-        print('Dostaváte číslo:', actual_number)
-
+        command_next()
     else:
-        print('Zadal/a jsi:', command)
+        print('Zadal/a jste neznámý příkaz')
     
