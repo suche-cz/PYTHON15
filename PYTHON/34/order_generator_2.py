@@ -26,15 +26,20 @@ def command_next():
     print('Dostaváte číslo:', actual_number)
 
 
+commands = {
+    'exit': command_exit,
+    'reset': command_reset,
+    'next': command_next,
+}
+
+
 while True:
     command = input('Zadejte příkaz: ')
 
-    if command == 'exit':
-        command_exit()
-    elif command == 'reset':
-        command_reset()
-    elif command == 'next':
-        command_next()
+    func = commands.get(command)
+
+    if func:
+        func()
     else:
         print('Zadal/a jste neznámý příkaz')
     
