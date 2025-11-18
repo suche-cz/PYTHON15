@@ -34,12 +34,9 @@ commands = {
 
 
 while True:
-    command = input('Zadejte příkaz: ')
-
-    func = commands.get(command)
-
-    if func:
+    try:
+        command = input('Zadejte příkaz: ')
+        func = commands[command]
         func()
-    else:
+    except KeyError:
         print('Zadal/a jste neznámý příkaz')
-    
