@@ -1,0 +1,134 @@
+>>> data = {'one': 1, 'two': 2, 'three': 3, 1000: 'thousand'}
+data
+>>> {'one': 1, 'two': 2, 'three': 3, 1000: 'thousand'}
+>>> data.get('one')
+1
+>>> data['one']
+1
+>>> data.get('x')
+>>> a = data.get('x')
+>>> a
+>>> type(a)
+<class 'NoneType'>
+>>> print(a)
+None
+>>> print(data.get('x'))
+None
+>>> print(data.get('x', 'unknown'))
+unknown
+>>> data['x']
+Traceback (most recent call last):
+File "<pyshell#21>", line 1, in <module>
+    data['x']
+KeyError: 'x'
+>>> data['x'] = 100
+>>> data['x']
+100
+>>> data
+{'one': 1, 'two': 2, 'three': 3, 1000: 'thousand', 'x': 100}
+>>> del data['three']
+>>> data
+{'one': 1, 'two': 2, 1000: 'thousand', 'x': 100}
+>>> data[1000]
+'thousand'
+>>> data.keys()
+dict_keys(['one', 'two', 1000, 'x'])
+>>> data.values()
+dict_values([1, 2, 'thousand', 100])
+>>> data.items()
+dict_items([('one', 1), ('two', 2), (1000, 'thousand'), ('x', 100)])
+>>> data
+{'one': 1, 'two': 2, 1000: 'thousand', 'x': 100}
+>>> data.pop('two')
+2
+>>> data
+{'one': 1, 1000: 'thousand', 'x': 100}
+>>> data.pop('xyz')
+Traceback (most recent call last):
+File "<pyshell#34>", line 1, in <module>
+    data.pop('xyz')
+KeyError: 'xyz'
+>>> data.pop('xyz', '___')
+'___'
+>>> data
+{'one': 1, 1000: 'thousand', 'x': 100}
+>>> 'y' in data
+False
+>>> 'x' in data
+True
+>>> data
+{'one': 1, 1000: 'thousand', 'x': 100}
+>>> data.clear()
+>>> data
+{}
+>>> data = []
+>>> d1 = {'key': data}
+>>> d2 = {'key': data}
+>>> data.append(1)
+data
+>>> [1]
+>>> d1
+{'key': [1]}
+>>> x = data
+>>> x.append(2)
+>>> x
+[1, 2]
+>>> data
+[1, 2]
+>>> id(x)
+2400422968896
+>>> id(data)
+2400422968896
+>>> d1['key']
+[1, 2]
+>>> id(d1['key'])
+2400422968896
+>>> new_data = data.copy()
+id(data)
+>>> 2400422968896
+id(new_data)
+>>> 2400422881984
+new_data
+>>> [1, 2]
+>>> d3 = d1.copy()
+>>> d1 == d3
+True
+>>> d1 is d3
+False
+>>> id(d1)
+2400423088384
+>>> id(d3)
+2400381314368
+>>> d1
+{'key': [1, 2]}
+>>> d3
+{'key': [1, 2]}
+>>> d1['key']
+[1, 2]
+>>> d3['key']
+[1, 2]
+>>> d3['key'] is d1['key']
+True
+>>> from copy import deepcopy
+>>> d4 = deepcopy(d1)
+>>> d4
+{'key': [1, 2]}
+>>> d4 == d1
+True
+>>> d4 is d1
+False
+>>> d1['key'] is d4['key']
+False
+
+
+>>> data
+[1, 2]
+>>> data = {1: 'one'}
+>>> data
+{1: 'one'}
+>>> data.update({2: 'two', 3: 'three'})
+>>> data
+{1: 'one', 2: 'two', 3: 'three'}
+>>> data.update(a=10, b=20)
+>>> data
+{1: 'one', 2: 'two', 3: 'three', 'a': 10, 'b': 20}
