@@ -31,7 +31,7 @@ def add_user(username: str, password: str):
     """
 
     if user_exists(username):
-        raise ValueError('user already exists')
+        raise ValueError('User already exists')
     
     users[username] = password
     
@@ -43,6 +43,12 @@ def password_check(username: str, password: str) -> bool:
     3. jinak False
     """
 
+    if user_exists(username):
+        existing_password = users[username]
+        return existing_password == password
+
+    raise ValueError('User not exists')
+
 
 def remove_user(username: str, password: str):
     """
@@ -50,6 +56,10 @@ def remove_user(username: str, password: str):
     2. pokud získané heslo je stejné jako zadané odebereme uživatele z users
     3. jinak vyhodíme chybu
     """
+    if password_check(username, password):
+        del users[username]
+    else:
+        raise ValueError('Invalid password')
 
 
 def user_exists(username: str) -> bool:
@@ -63,7 +73,19 @@ def change_password(username: str, old_password: str, new_password: str):
     3. jinak vyhodíme chybu
     """
 
+    if password_check(username, old_password):
+        users[username] = new_password # natavuji pro klíč [username] hodnotu [new_password]
+
+        # x = users[username] # získávám hodnotu pro klíč [username] a ukládám do x
+    else:
+        raise ValueError('Invalid password')
 
 
-add_user('jan', 'Heslo1234')
+
+
+print(password_check('suche', 'heslo_xyz'))
+print(password_check('suche', 'heslo'))
+
+change_password('suche', 'heslo1', 'new_password!!!')
+
 print(users)
