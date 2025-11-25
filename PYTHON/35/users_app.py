@@ -27,8 +27,13 @@ def main():
     data = read_data()
     users.update(data)
 
-    add_user('pepa', 'heslo1234')
-    print(users)
+    # check1 = password_check('pepa', 'heslo1234')
+    # check2 = password_check('new_user', 'heslo1234')
+
+    # print(check1, check2)
+
+    add_user('suche', 'moje-tajne-heslo')
+    add_user('jana', 'janapassword')
 
     save_data()
 

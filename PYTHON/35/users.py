@@ -1,3 +1,5 @@
+import hashlib
+
 """
 User auth. system
 jmeno, příjmení
@@ -28,7 +30,7 @@ def add_user(username: str, password: str):
     if user_exists(username):
         raise ValueError('User already exists')
     
-    users[username] = password
+    users[username] = password_hash(password)
     
 
 def password_check(username: str, password: str) -> bool:
@@ -40,7 +42,7 @@ def password_check(username: str, password: str) -> bool:
 
     if user_exists(username):
         existing_password = users[username]
-        return existing_password == password
+        return existing_password == password_hash(password)
 
     raise ValueError('User not exists')
 
@@ -69,9 +71,20 @@ def change_password(username: str, old_password: str, new_password: str):
     """
 
     if password_check(username, old_password):
-        users[username] = new_password # natavuji pro klíč [username] hodnotu [new_password]
+        users[username] = password_hash(new_password) # natavuji pro klíč [username] hodnotu [new_password]
 
         # x = users[username] # získávám hodnotu pro klíč [username] a ukládám do x
     else:
         raise ValueError('Invalid password')
+    
+        
+
+
+def password_hash(password: str) -> str:
+    """
+    z hesla udělá hash pro uložení
+    """
+    encoded_password = (password + 'secret-system-key').encode()
+    h = hashlib.sha256(encoded_password).hexdigest()
+    return h
 
