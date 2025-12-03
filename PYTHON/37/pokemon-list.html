@@ -1,0 +1,3232 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Pokémon — List</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <style>
+    body {
+      background: #f8fafc
+    }
+
+    .poke-card {
+      min-height: 140px
+    }
+
+    .poke-card img {
+      width: 64px;
+      height: 64px;
+      image-rendering: pixelated;
+    }
+
+    .type-badge {
+      font-weight: 700;
+      font-size: .75rem
+    }
+
+    .sprite {
+      width: 72px;
+      height: 72px;
+      background: #fff;
+      border: 1px solid #e6eef8;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center
+    }
+  </style>
+</head>
+
+<body class="py-4">
+  <main class="container">
+
+    <header class="d-flex flex-column flex-sm-row align-items-sm-center justify-content-between mb-4 gap-3">
+      <h1 class="h4 m-0">Pokémon</h1>
+
+      <form class="d-flex" method="GET">
+        <input name="q" class="form-control form-control-sm me-2" placeholder="Search name or id" aria-label="Search pokemon">
+        <button class="btn btn-sm btn-primary" type="submit">Search</button>
+      </form>
+    </header>
+
+    <!-- grid -->
+    <section class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-3" aria-live="polite">
+
+      <article class="col">
+    <a href="#" class="text-decoration-none">
+        <div class="card poke-card h-100 shadow-sm">
+            <div class="card-body d-flex gap-3 align-items-center">
+                <div class="sprite flex-shrink-0">
+                    <img src="image" alt="">
+                </div>
+                <div class="flex-grow-1">
+                    <div class="d-flex justify-content-between align-items-start">
+                        <h3 class="h6 mb-1">bulbasaur</h3>
+                        <div class="text-muted small">000</div>
+                    </div>
+                    <div class="d-flex gap-2 mt-1">
+                        <span class="badge bg-warning text-dark type-badge">type</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </a>
+</article>
+
+<article class="col">
+    <a href="#" class="text-decoration-none">
+        <div class="card poke-card h-100 shadow-sm">
+            <div class="card-body d-flex gap-3 align-items-center">
+                <div class="sprite flex-shrink-0">
+                    <img src="image" alt="">
+                </div>
+                <div class="flex-grow-1">
+                    <div class="d-flex justify-content-between align-items-start">
+                        <h3 class="h6 mb-1">ivysaur</h3>
+                        <div class="text-muted small">000</div>
+                    </div>
+                    <div class="d-flex gap-2 mt-1">
+                        <span class="badge bg-warning text-dark type-badge">type</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </a>
+</article>
+
+<article class="col">
+    <a href="#" class="text-decoration-none">
+        <div class="card poke-card h-100 shadow-sm">
+            <div class="card-body d-flex gap-3 align-items-center">
+                <div class="sprite flex-shrink-0">
+                    <img src="image" alt="">
+                </div>
+                <div class="flex-grow-1">
+                    <div class="d-flex justify-content-between align-items-start">
+                        <h3 class="h6 mb-1">venusaur</h3>
+                        <div class="text-muted small">000</div>
+                    </div>
+                    <div class="d-flex gap-2 mt-1">
+                        <span class="badge bg-warning text-dark type-badge">type</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </a>
+</article>
+
+<article class="col">
+    <a href="#" class="text-decoration-none">
+        <div class="card poke-card h-100 shadow-sm">
+            <div class="card-body d-flex gap-3 align-items-center">
+                <div class="sprite flex-shrink-0">
+                    <img src="image" alt="">
+                </div>
+                <div class="flex-grow-1">
+                    <div class="d-flex justify-content-between align-items-start">
+                        <h3 class="h6 mb-1">charmander</h3>
+                        <div class="text-muted small">000</div>
+                    </div>
+                    <div class="d-flex gap-2 mt-1">
+                        <span class="badge bg-warning text-dark type-badge">type</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </a>
+</article>
+
+<article class="col">
+    <a href="#" class="text-decoration-none">
+        <div class="card poke-card h-100 shadow-sm">
+            <div class="card-body d-flex gap-3 align-items-center">
+                <div class="sprite flex-shrink-0">
+                    <img src="image" alt="">
+                </div>
+                <div class="flex-grow-1">
+                    <div class="d-flex justify-content-between align-items-start">
+                        <h3 class="h6 mb-1">charmeleon</h3>
+                        <div class="text-muted small">000</div>
+                    </div>
+                    <div class="d-flex gap-2 mt-1">
+                        <span class="badge bg-warning text-dark type-badge">type</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </a>
+</article>
+
+<article class="col">
+    <a href="#" class="text-decoration-none">
+        <div class="card poke-card h-100 shadow-sm">
+            <div class="card-body d-flex gap-3 align-items-center">
+                <div class="sprite flex-shrink-0">
+                    <img src="image" alt="">
+                </div>
+                <div class="flex-grow-1">
+                    <div class="d-flex justify-content-between align-items-start">
+                        <h3 class="h6 mb-1">charizard</h3>
+                        <div class="text-muted small">000</div>
+                    </div>
+                    <div class="d-flex gap-2 mt-1">
+                        <span class="badge bg-warning text-dark type-badge">type</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </a>
+</article>
+
+<article class="col">
+    <a href="#" class="text-decoration-none">
+        <div class="card poke-card h-100 shadow-sm">
+            <div class="card-body d-flex gap-3 align-items-center">
+                <div class="sprite flex-shrink-0">
+                    <img src="image" alt="">
+                </div>
+                <div class="flex-grow-1">
+                    <div class="d-flex justify-content-between align-items-start">
+                        <h3 class="h6 mb-1">squirtle</h3>
+                        <div class="text-muted small">000</div>
+                    </div>
+                    <div class="d-flex gap-2 mt-1">
+                        <span class="badge bg-warning text-dark type-badge">type</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </a>
+</article>
+
+<article class="col">
+    <a href="#" class="text-decoration-none">
+        <div class="card poke-card h-100 shadow-sm">
+            <div class="card-body d-flex gap-3 align-items-center">
+                <div class="sprite flex-shrink-0">
+                    <img src="image" alt="">
+                </div>
+                <div class="flex-grow-1">
+                    <div class="d-flex justify-content-between align-items-start">
+                        <h3 class="h6 mb-1">wartortle</h3>
+                        <div class="text-muted small">000</div>
+                    </div>
+                    <div class="d-flex gap-2 mt-1">
+                        <span class="badge bg-warning text-dark type-badge">type</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </a>
+</article>
+
+<article class="col">
+    <a href="#" class="text-decoration-none">
+        <div class="card poke-card h-100 shadow-sm">
+            <div class="card-body d-flex gap-3 align-items-center">
+                <div class="sprite flex-shrink-0">
+                    <img src="image" alt="">
+                </div>
+                <div class="flex-grow-1">
+                    <div class="d-flex justify-content-between align-items-start">
+                        <h3 class="h6 mb-1">blastoise</h3>
+                        <div class="text-muted small">000</div>
+                    </div>
+                    <div class="d-flex gap-2 mt-1">
+                        <span class="badge bg-warning text-dark type-badge">type</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </a>
+</article>
+
+<article class="col">
+    <a href="#" class="text-decoration-none">
+        <div class="card poke-card h-100 shadow-sm">
+            <div class="card-body d-flex gap-3 align-items-center">
+                <div class="sprite flex-shrink-0">
+                    <img src="image" alt="">
+                </div>
+                <div class="flex-grow-1">
+                    <div class="d-flex justify-content-between align-items-start">
+                        <h3 class="h6 mb-1">caterpie</h3>
+                        <div class="text-muted small">000</div>
+                    </div>
+                    <div class="d-flex gap-2 mt-1">
+                        <span class="badge bg-warning text-dark type-badge">type</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </a>
+</article>
+
+<article class="col">
+    <a href="#" class="text-decoration-none">
+        <div class="card poke-card h-100 shadow-sm">
+            <div class="card-body d-flex gap-3 align-items-center">
+                <div class="sprite flex-shrink-0">
+                    <img src="image" alt="">
+                </div>
+                <div class="flex-grow-1">
+                    <div class="d-flex justify-content-between align-items-start">
+                        <h3 class="h6 mb-1">metapod</h3>
+                        <div class="text-muted small">000</div>
+                    </div>
+                    <div class="d-flex gap-2 mt-1">
+                        <span class="badge bg-warning text-dark type-badge">type</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </a>
+</article>
+
+<article class="col">
+    <a href="#" class="text-decoration-none">
+        <div class="card poke-card h-100 shadow-sm">
+            <div class="card-body d-flex gap-3 align-items-center">
+                <div class="sprite flex-shrink-0">
+                    <img src="image" alt="">
+                </div>
+                <div class="flex-grow-1">
+                    <div class="d-flex justify-content-between align-items-start">
+                        <h3 class="h6 mb-1">butterfree</h3>
+                        <div class="text-muted small">000</div>
+                    </div>
+                    <div class="d-flex gap-2 mt-1">
+                        <span class="badge bg-warning text-dark type-badge">type</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </a>
+</article>
+
+<article class="col">
+    <a href="#" class="text-decoration-none">
+        <div class="card poke-card h-100 shadow-sm">
+            <div class="card-body d-flex gap-3 align-items-center">
+                <div class="sprite flex-shrink-0">
+                    <img src="image" alt="">
+                </div>
+                <div class="flex-grow-1">
+                    <div class="d-flex justify-content-between align-items-start">
+                        <h3 class="h6 mb-1">weedle</h3>
+                        <div class="text-muted small">000</div>
+                    </div>
+                    <div class="d-flex gap-2 mt-1">
+                        <span class="badge bg-warning text-dark type-badge">type</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </a>
+</article>
+
+<article class="col">
+    <a href="#" class="text-decoration-none">
+        <div class="card poke-card h-100 shadow-sm">
+            <div class="card-body d-flex gap-3 align-items-center">
+                <div class="sprite flex-shrink-0">
+                    <img src="image" alt="">
+                </div>
+                <div class="flex-grow-1">
+                    <div class="d-flex justify-content-between align-items-start">
+                        <h3 class="h6 mb-1">kakuna</h3>
+                        <div class="text-muted small">000</div>
+                    </div>
+                    <div class="d-flex gap-2 mt-1">
+                        <span class="badge bg-warning text-dark type-badge">type</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </a>
+</article>
+
+<article class="col">
+    <a href="#" class="text-decoration-none">
+        <div class="card poke-card h-100 shadow-sm">
+            <div class="card-body d-flex gap-3 align-items-center">
+                <div class="sprite flex-shrink-0">
+                    <img src="image" alt="">
+                </div>
+                <div class="flex-grow-1">
+                    <div class="d-flex justify-content-between align-items-start">
+                        <h3 class="h6 mb-1">beedrill</h3>
+                        <div class="text-muted small">000</div>
+                    </div>
+                    <div class="d-flex gap-2 mt-1">
+                        <span class="badge bg-warning text-dark type-badge">type</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </a>
+</article>
+
+<article class="col">
+    <a href="#" class="text-decoration-none">
+        <div class="card poke-card h-100 shadow-sm">
+            <div class="card-body d-flex gap-3 align-items-center">
+                <div class="sprite flex-shrink-0">
+                    <img src="image" alt="">
+                </div>
+                <div class="flex-grow-1">
+                    <div class="d-flex justify-content-between align-items-start">
+                        <h3 class="h6 mb-1">pidgey</h3>
+                        <div class="text-muted small">000</div>
+                    </div>
+                    <div class="d-flex gap-2 mt-1">
+                        <span class="badge bg-warning text-dark type-badge">type</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </a>
+</article>
+
+<article class="col">
+    <a href="#" class="text-decoration-none">
+        <div class="card poke-card h-100 shadow-sm">
+            <div class="card-body d-flex gap-3 align-items-center">
+                <div class="sprite flex-shrink-0">
+                    <img src="image" alt="">
+                </div>
+                <div class="flex-grow-1">
+                    <div class="d-flex justify-content-between align-items-start">
+                        <h3 class="h6 mb-1">pidgeotto</h3>
+                        <div class="text-muted small">000</div>
+                    </div>
+                    <div class="d-flex gap-2 mt-1">
+                        <span class="badge bg-warning text-dark type-badge">type</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </a>
+</article>
+
+<article class="col">
+    <a href="#" class="text-decoration-none">
+        <div class="card poke-card h-100 shadow-sm">
+            <div class="card-body d-flex gap-3 align-items-center">
+                <div class="sprite flex-shrink-0">
+                    <img src="image" alt="">
+                </div>
+                <div class="flex-grow-1">
+                    <div class="d-flex justify-content-between align-items-start">
+                        <h3 class="h6 mb-1">pidgeot</h3>
+                        <div class="text-muted small">000</div>
+                    </div>
+                    <div class="d-flex gap-2 mt-1">
+                        <span class="badge bg-warning text-dark type-badge">type</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </a>
+</article>
+
+<article class="col">
+    <a href="#" class="text-decoration-none">
+        <div class="card poke-card h-100 shadow-sm">
+            <div class="card-body d-flex gap-3 align-items-center">
+                <div class="sprite flex-shrink-0">
+                    <img src="image" alt="">
+                </div>
+                <div class="flex-grow-1">
+                    <div class="d-flex justify-content-between align-items-start">
+                        <h3 class="h6 mb-1">rattata</h3>
+                        <div class="text-muted small">000</div>
+                    </div>
+                    <div class="d-flex gap-2 mt-1">
+                        <span class="badge bg-warning text-dark type-badge">type</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </a>
+</article>
+
+<article class="col">
+    <a href="#" class="text-decoration-none">
+        <div class="card poke-card h-100 shadow-sm">
+            <div class="card-body d-flex gap-3 align-items-center">
+                <div class="sprite flex-shrink-0">
+                    <img src="image" alt="">
+                </div>
+                <div class="flex-grow-1">
+                    <div class="d-flex justify-content-between align-items-start">
+                        <h3 class="h6 mb-1">raticate</h3>
+                        <div class="text-muted small">000</div>
+                    </div>
+                    <div class="d-flex gap-2 mt-1">
+                        <span class="badge bg-warning text-dark type-badge">type</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </a>
+</article>
+
+<article class="col">
+    <a href="#" class="text-decoration-none">
+        <div class="card poke-card h-100 shadow-sm">
+            <div class="card-body d-flex gap-3 align-items-center">
+                <div class="sprite flex-shrink-0">
+                    <img src="image" alt="">
+                </div>
+                <div class="flex-grow-1">
+                    <div class="d-flex justify-content-between align-items-start">
+                        <h3 class="h6 mb-1">spearow</h3>
+                        <div class="text-muted small">000</div>
+                    </div>
+                    <div class="d-flex gap-2 mt-1">
+                        <span class="badge bg-warning text-dark type-badge">type</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </a>
+</article>
+
+<article class="col">
+    <a href="#" class="text-decoration-none">
+        <div class="card poke-card h-100 shadow-sm">
+            <div class="card-body d-flex gap-3 align-items-center">
+                <div class="sprite flex-shrink-0">
+                    <img src="image" alt="">
+                </div>
+                <div class="flex-grow-1">
+                    <div class="d-flex justify-content-between align-items-start">
+                        <h3 class="h6 mb-1">fearow</h3>
+                        <div class="text-muted small">000</div>
+                    </div>
+                    <div class="d-flex gap-2 mt-1">
+                        <span class="badge bg-warning text-dark type-badge">type</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </a>
+</article>
+
+<article class="col">
+    <a href="#" class="text-decoration-none">
+        <div class="card poke-card h-100 shadow-sm">
+            <div class="card-body d-flex gap-3 align-items-center">
+                <div class="sprite flex-shrink-0">
+                    <img src="image" alt="">
+                </div>
+                <div class="flex-grow-1">
+                    <div class="d-flex justify-content-between align-items-start">
+                        <h3 class="h6 mb-1">ekans</h3>
+                        <div class="text-muted small">000</div>
+                    </div>
+                    <div class="d-flex gap-2 mt-1">
+                        <span class="badge bg-warning text-dark type-badge">type</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </a>
+</article>
+
+<article class="col">
+    <a href="#" class="text-decoration-none">
+        <div class="card poke-card h-100 shadow-sm">
+            <div class="card-body d-flex gap-3 align-items-center">
+                <div class="sprite flex-shrink-0">
+                    <img src="image" alt="">
+                </div>
+                <div class="flex-grow-1">
+                    <div class="d-flex justify-content-between align-items-start">
+                        <h3 class="h6 mb-1">arbok</h3>
+                        <div class="text-muted small">000</div>
+                    </div>
+                    <div class="d-flex gap-2 mt-1">
+                        <span class="badge bg-warning text-dark type-badge">type</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </a>
+</article>
+
+<article class="col">
+    <a href="#" class="text-decoration-none">
+        <div class="card poke-card h-100 shadow-sm">
+            <div class="card-body d-flex gap-3 align-items-center">
+                <div class="sprite flex-shrink-0">
+                    <img src="image" alt="">
+                </div>
+                <div class="flex-grow-1">
+                    <div class="d-flex justify-content-between align-items-start">
+                        <h3 class="h6 mb-1">pikachu</h3>
+                        <div class="text-muted small">000</div>
+                    </div>
+                    <div class="d-flex gap-2 mt-1">
+                        <span class="badge bg-warning text-dark type-badge">type</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </a>
+</article>
+
+<article class="col">
+    <a href="#" class="text-decoration-none">
+        <div class="card poke-card h-100 shadow-sm">
+            <div class="card-body d-flex gap-3 align-items-center">
+                <div class="sprite flex-shrink-0">
+                    <img src="image" alt="">
+                </div>
+                <div class="flex-grow-1">
+                    <div class="d-flex justify-content-between align-items-start">
+                        <h3 class="h6 mb-1">raichu</h3>
+                        <div class="text-muted small">000</div>
+                    </div>
+                    <div class="d-flex gap-2 mt-1">
+                        <span class="badge bg-warning text-dark type-badge">type</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </a>
+</article>
+
+<article class="col">
+    <a href="#" class="text-decoration-none">
+        <div class="card poke-card h-100 shadow-sm">
+            <div class="card-body d-flex gap-3 align-items-center">
+                <div class="sprite flex-shrink-0">
+                    <img src="image" alt="">
+                </div>
+                <div class="flex-grow-1">
+                    <div class="d-flex justify-content-between align-items-start">
+                        <h3 class="h6 mb-1">sandshrew</h3>
+                        <div class="text-muted small">000</div>
+                    </div>
+                    <div class="d-flex gap-2 mt-1">
+                        <span class="badge bg-warning text-dark type-badge">type</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </a>
+</article>
+
+<article class="col">
+    <a href="#" class="text-decoration-none">
+        <div class="card poke-card h-100 shadow-sm">
+            <div class="card-body d-flex gap-3 align-items-center">
+                <div class="sprite flex-shrink-0">
+                    <img src="image" alt="">
+                </div>
+                <div class="flex-grow-1">
+                    <div class="d-flex justify-content-between align-items-start">
+                        <h3 class="h6 mb-1">sandslash</h3>
+                        <div class="text-muted small">000</div>
+                    </div>
+                    <div class="d-flex gap-2 mt-1">
+                        <span class="badge bg-warning text-dark type-badge">type</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </a>
+</article>
+
+<article class="col">
+    <a href="#" class="text-decoration-none">
+        <div class="card poke-card h-100 shadow-sm">
+            <div class="card-body d-flex gap-3 align-items-center">
+                <div class="sprite flex-shrink-0">
+                    <img src="image" alt="">
+                </div>
+                <div class="flex-grow-1">
+                    <div class="d-flex justify-content-between align-items-start">
+                        <h3 class="h6 mb-1">nidoran-f</h3>
+                        <div class="text-muted small">000</div>
+                    </div>
+                    <div class="d-flex gap-2 mt-1">
+                        <span class="badge bg-warning text-dark type-badge">type</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </a>
+</article>
+
+<article class="col">
+    <a href="#" class="text-decoration-none">
+        <div class="card poke-card h-100 shadow-sm">
+            <div class="card-body d-flex gap-3 align-items-center">
+                <div class="sprite flex-shrink-0">
+                    <img src="image" alt="">
+                </div>
+                <div class="flex-grow-1">
+                    <div class="d-flex justify-content-between align-items-start">
+                        <h3 class="h6 mb-1">nidorina</h3>
+                        <div class="text-muted small">000</div>
+                    </div>
+                    <div class="d-flex gap-2 mt-1">
+                        <span class="badge bg-warning text-dark type-badge">type</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </a>
+</article>
+
+<article class="col">
+    <a href="#" class="text-decoration-none">
+        <div class="card poke-card h-100 shadow-sm">
+            <div class="card-body d-flex gap-3 align-items-center">
+                <div class="sprite flex-shrink-0">
+                    <img src="image" alt="">
+                </div>
+                <div class="flex-grow-1">
+                    <div class="d-flex justify-content-between align-items-start">
+                        <h3 class="h6 mb-1">nidoqueen</h3>
+                        <div class="text-muted small">000</div>
+                    </div>
+                    <div class="d-flex gap-2 mt-1">
+                        <span class="badge bg-warning text-dark type-badge">type</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </a>
+</article>
+
+<article class="col">
+    <a href="#" class="text-decoration-none">
+        <div class="card poke-card h-100 shadow-sm">
+            <div class="card-body d-flex gap-3 align-items-center">
+                <div class="sprite flex-shrink-0">
+                    <img src="image" alt="">
+                </div>
+                <div class="flex-grow-1">
+                    <div class="d-flex justify-content-between align-items-start">
+                        <h3 class="h6 mb-1">nidoran-m</h3>
+                        <div class="text-muted small">000</div>
+                    </div>
+                    <div class="d-flex gap-2 mt-1">
+                        <span class="badge bg-warning text-dark type-badge">type</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </a>
+</article>
+
+<article class="col">
+    <a href="#" class="text-decoration-none">
+        <div class="card poke-card h-100 shadow-sm">
+            <div class="card-body d-flex gap-3 align-items-center">
+                <div class="sprite flex-shrink-0">
+                    <img src="image" alt="">
+                </div>
+                <div class="flex-grow-1">
+                    <div class="d-flex justify-content-between align-items-start">
+                        <h3 class="h6 mb-1">nidorino</h3>
+                        <div class="text-muted small">000</div>
+                    </div>
+                    <div class="d-flex gap-2 mt-1">
+                        <span class="badge bg-warning text-dark type-badge">type</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </a>
+</article>
+
+<article class="col">
+    <a href="#" class="text-decoration-none">
+        <div class="card poke-card h-100 shadow-sm">
+            <div class="card-body d-flex gap-3 align-items-center">
+                <div class="sprite flex-shrink-0">
+                    <img src="image" alt="">
+                </div>
+                <div class="flex-grow-1">
+                    <div class="d-flex justify-content-between align-items-start">
+                        <h3 class="h6 mb-1">nidoking</h3>
+                        <div class="text-muted small">000</div>
+                    </div>
+                    <div class="d-flex gap-2 mt-1">
+                        <span class="badge bg-warning text-dark type-badge">type</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </a>
+</article>
+
+<article class="col">
+    <a href="#" class="text-decoration-none">
+        <div class="card poke-card h-100 shadow-sm">
+            <div class="card-body d-flex gap-3 align-items-center">
+                <div class="sprite flex-shrink-0">
+                    <img src="image" alt="">
+                </div>
+                <div class="flex-grow-1">
+                    <div class="d-flex justify-content-between align-items-start">
+                        <h3 class="h6 mb-1">clefairy</h3>
+                        <div class="text-muted small">000</div>
+                    </div>
+                    <div class="d-flex gap-2 mt-1">
+                        <span class="badge bg-warning text-dark type-badge">type</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </a>
+</article>
+
+<article class="col">
+    <a href="#" class="text-decoration-none">
+        <div class="card poke-card h-100 shadow-sm">
+            <div class="card-body d-flex gap-3 align-items-center">
+                <div class="sprite flex-shrink-0">
+                    <img src="image" alt="">
+                </div>
+                <div class="flex-grow-1">
+                    <div class="d-flex justify-content-between align-items-start">
+                        <h3 class="h6 mb-1">clefable</h3>
+                        <div class="text-muted small">000</div>
+                    </div>
+                    <div class="d-flex gap-2 mt-1">
+                        <span class="badge bg-warning text-dark type-badge">type</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </a>
+</article>
+
+<article class="col">
+    <a href="#" class="text-decoration-none">
+        <div class="card poke-card h-100 shadow-sm">
+            <div class="card-body d-flex gap-3 align-items-center">
+                <div class="sprite flex-shrink-0">
+                    <img src="image" alt="">
+                </div>
+                <div class="flex-grow-1">
+                    <div class="d-flex justify-content-between align-items-start">
+                        <h3 class="h6 mb-1">vulpix</h3>
+                        <div class="text-muted small">000</div>
+                    </div>
+                    <div class="d-flex gap-2 mt-1">
+                        <span class="badge bg-warning text-dark type-badge">type</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </a>
+</article>
+
+<article class="col">
+    <a href="#" class="text-decoration-none">
+        <div class="card poke-card h-100 shadow-sm">
+            <div class="card-body d-flex gap-3 align-items-center">
+                <div class="sprite flex-shrink-0">
+                    <img src="image" alt="">
+                </div>
+                <div class="flex-grow-1">
+                    <div class="d-flex justify-content-between align-items-start">
+                        <h3 class="h6 mb-1">ninetales</h3>
+                        <div class="text-muted small">000</div>
+                    </div>
+                    <div class="d-flex gap-2 mt-1">
+                        <span class="badge bg-warning text-dark type-badge">type</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </a>
+</article>
+
+<article class="col">
+    <a href="#" class="text-decoration-none">
+        <div class="card poke-card h-100 shadow-sm">
+            <div class="card-body d-flex gap-3 align-items-center">
+                <div class="sprite flex-shrink-0">
+                    <img src="image" alt="">
+                </div>
+                <div class="flex-grow-1">
+                    <div class="d-flex justify-content-between align-items-start">
+                        <h3 class="h6 mb-1">jigglypuff</h3>
+                        <div class="text-muted small">000</div>
+                    </div>
+                    <div class="d-flex gap-2 mt-1">
+                        <span class="badge bg-warning text-dark type-badge">type</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </a>
+</article>
+
+<article class="col">
+    <a href="#" class="text-decoration-none">
+        <div class="card poke-card h-100 shadow-sm">
+            <div class="card-body d-flex gap-3 align-items-center">
+                <div class="sprite flex-shrink-0">
+                    <img src="image" alt="">
+                </div>
+                <div class="flex-grow-1">
+                    <div class="d-flex justify-content-between align-items-start">
+                        <h3 class="h6 mb-1">wigglytuff</h3>
+                        <div class="text-muted small">000</div>
+                    </div>
+                    <div class="d-flex gap-2 mt-1">
+                        <span class="badge bg-warning text-dark type-badge">type</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </a>
+</article>
+
+<article class="col">
+    <a href="#" class="text-decoration-none">
+        <div class="card poke-card h-100 shadow-sm">
+            <div class="card-body d-flex gap-3 align-items-center">
+                <div class="sprite flex-shrink-0">
+                    <img src="image" alt="">
+                </div>
+                <div class="flex-grow-1">
+                    <div class="d-flex justify-content-between align-items-start">
+                        <h3 class="h6 mb-1">zubat</h3>
+                        <div class="text-muted small">000</div>
+                    </div>
+                    <div class="d-flex gap-2 mt-1">
+                        <span class="badge bg-warning text-dark type-badge">type</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </a>
+</article>
+
+<article class="col">
+    <a href="#" class="text-decoration-none">
+        <div class="card poke-card h-100 shadow-sm">
+            <div class="card-body d-flex gap-3 align-items-center">
+                <div class="sprite flex-shrink-0">
+                    <img src="image" alt="">
+                </div>
+                <div class="flex-grow-1">
+                    <div class="d-flex justify-content-between align-items-start">
+                        <h3 class="h6 mb-1">golbat</h3>
+                        <div class="text-muted small">000</div>
+                    </div>
+                    <div class="d-flex gap-2 mt-1">
+                        <span class="badge bg-warning text-dark type-badge">type</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </a>
+</article>
+
+<article class="col">
+    <a href="#" class="text-decoration-none">
+        <div class="card poke-card h-100 shadow-sm">
+            <div class="card-body d-flex gap-3 align-items-center">
+                <div class="sprite flex-shrink-0">
+                    <img src="image" alt="">
+                </div>
+                <div class="flex-grow-1">
+                    <div class="d-flex justify-content-between align-items-start">
+                        <h3 class="h6 mb-1">oddish</h3>
+                        <div class="text-muted small">000</div>
+                    </div>
+                    <div class="d-flex gap-2 mt-1">
+                        <span class="badge bg-warning text-dark type-badge">type</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </a>
+</article>
+
+<article class="col">
+    <a href="#" class="text-decoration-none">
+        <div class="card poke-card h-100 shadow-sm">
+            <div class="card-body d-flex gap-3 align-items-center">
+                <div class="sprite flex-shrink-0">
+                    <img src="image" alt="">
+                </div>
+                <div class="flex-grow-1">
+                    <div class="d-flex justify-content-between align-items-start">
+                        <h3 class="h6 mb-1">gloom</h3>
+                        <div class="text-muted small">000</div>
+                    </div>
+                    <div class="d-flex gap-2 mt-1">
+                        <span class="badge bg-warning text-dark type-badge">type</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </a>
+</article>
+
+<article class="col">
+    <a href="#" class="text-decoration-none">
+        <div class="card poke-card h-100 shadow-sm">
+            <div class="card-body d-flex gap-3 align-items-center">
+                <div class="sprite flex-shrink-0">
+                    <img src="image" alt="">
+                </div>
+                <div class="flex-grow-1">
+                    <div class="d-flex justify-content-between align-items-start">
+                        <h3 class="h6 mb-1">vileplume</h3>
+                        <div class="text-muted small">000</div>
+                    </div>
+                    <div class="d-flex gap-2 mt-1">
+                        <span class="badge bg-warning text-dark type-badge">type</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </a>
+</article>
+
+<article class="col">
+    <a href="#" class="text-decoration-none">
+        <div class="card poke-card h-100 shadow-sm">
+            <div class="card-body d-flex gap-3 align-items-center">
+                <div class="sprite flex-shrink-0">
+                    <img src="image" alt="">
+                </div>
+                <div class="flex-grow-1">
+                    <div class="d-flex justify-content-between align-items-start">
+                        <h3 class="h6 mb-1">paras</h3>
+                        <div class="text-muted small">000</div>
+                    </div>
+                    <div class="d-flex gap-2 mt-1">
+                        <span class="badge bg-warning text-dark type-badge">type</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </a>
+</article>
+
+<article class="col">
+    <a href="#" class="text-decoration-none">
+        <div class="card poke-card h-100 shadow-sm">
+            <div class="card-body d-flex gap-3 align-items-center">
+                <div class="sprite flex-shrink-0">
+                    <img src="image" alt="">
+                </div>
+                <div class="flex-grow-1">
+                    <div class="d-flex justify-content-between align-items-start">
+                        <h3 class="h6 mb-1">parasect</h3>
+                        <div class="text-muted small">000</div>
+                    </div>
+                    <div class="d-flex gap-2 mt-1">
+                        <span class="badge bg-warning text-dark type-badge">type</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </a>
+</article>
+
+<article class="col">
+    <a href="#" class="text-decoration-none">
+        <div class="card poke-card h-100 shadow-sm">
+            <div class="card-body d-flex gap-3 align-items-center">
+                <div class="sprite flex-shrink-0">
+                    <img src="image" alt="">
+                </div>
+                <div class="flex-grow-1">
+                    <div class="d-flex justify-content-between align-items-start">
+                        <h3 class="h6 mb-1">venonat</h3>
+                        <div class="text-muted small">000</div>
+                    </div>
+                    <div class="d-flex gap-2 mt-1">
+                        <span class="badge bg-warning text-dark type-badge">type</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </a>
+</article>
+
+<article class="col">
+    <a href="#" class="text-decoration-none">
+        <div class="card poke-card h-100 shadow-sm">
+            <div class="card-body d-flex gap-3 align-items-center">
+                <div class="sprite flex-shrink-0">
+                    <img src="image" alt="">
+                </div>
+                <div class="flex-grow-1">
+                    <div class="d-flex justify-content-between align-items-start">
+                        <h3 class="h6 mb-1">venomoth</h3>
+                        <div class="text-muted small">000</div>
+                    </div>
+                    <div class="d-flex gap-2 mt-1">
+                        <span class="badge bg-warning text-dark type-badge">type</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </a>
+</article>
+
+<article class="col">
+    <a href="#" class="text-decoration-none">
+        <div class="card poke-card h-100 shadow-sm">
+            <div class="card-body d-flex gap-3 align-items-center">
+                <div class="sprite flex-shrink-0">
+                    <img src="image" alt="">
+                </div>
+                <div class="flex-grow-1">
+                    <div class="d-flex justify-content-between align-items-start">
+                        <h3 class="h6 mb-1">diglett</h3>
+                        <div class="text-muted small">000</div>
+                    </div>
+                    <div class="d-flex gap-2 mt-1">
+                        <span class="badge bg-warning text-dark type-badge">type</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </a>
+</article>
+
+<article class="col">
+    <a href="#" class="text-decoration-none">
+        <div class="card poke-card h-100 shadow-sm">
+            <div class="card-body d-flex gap-3 align-items-center">
+                <div class="sprite flex-shrink-0">
+                    <img src="image" alt="">
+                </div>
+                <div class="flex-grow-1">
+                    <div class="d-flex justify-content-between align-items-start">
+                        <h3 class="h6 mb-1">dugtrio</h3>
+                        <div class="text-muted small">000</div>
+                    </div>
+                    <div class="d-flex gap-2 mt-1">
+                        <span class="badge bg-warning text-dark type-badge">type</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </a>
+</article>
+
+<article class="col">
+    <a href="#" class="text-decoration-none">
+        <div class="card poke-card h-100 shadow-sm">
+            <div class="card-body d-flex gap-3 align-items-center">
+                <div class="sprite flex-shrink-0">
+                    <img src="image" alt="">
+                </div>
+                <div class="flex-grow-1">
+                    <div class="d-flex justify-content-between align-items-start">
+                        <h3 class="h6 mb-1">meowth</h3>
+                        <div class="text-muted small">000</div>
+                    </div>
+                    <div class="d-flex gap-2 mt-1">
+                        <span class="badge bg-warning text-dark type-badge">type</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </a>
+</article>
+
+<article class="col">
+    <a href="#" class="text-decoration-none">
+        <div class="card poke-card h-100 shadow-sm">
+            <div class="card-body d-flex gap-3 align-items-center">
+                <div class="sprite flex-shrink-0">
+                    <img src="image" alt="">
+                </div>
+                <div class="flex-grow-1">
+                    <div class="d-flex justify-content-between align-items-start">
+                        <h3 class="h6 mb-1">persian</h3>
+                        <div class="text-muted small">000</div>
+                    </div>
+                    <div class="d-flex gap-2 mt-1">
+                        <span class="badge bg-warning text-dark type-badge">type</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </a>
+</article>
+
+<article class="col">
+    <a href="#" class="text-decoration-none">
+        <div class="card poke-card h-100 shadow-sm">
+            <div class="card-body d-flex gap-3 align-items-center">
+                <div class="sprite flex-shrink-0">
+                    <img src="image" alt="">
+                </div>
+                <div class="flex-grow-1">
+                    <div class="d-flex justify-content-between align-items-start">
+                        <h3 class="h6 mb-1">psyduck</h3>
+                        <div class="text-muted small">000</div>
+                    </div>
+                    <div class="d-flex gap-2 mt-1">
+                        <span class="badge bg-warning text-dark type-badge">type</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </a>
+</article>
+
+<article class="col">
+    <a href="#" class="text-decoration-none">
+        <div class="card poke-card h-100 shadow-sm">
+            <div class="card-body d-flex gap-3 align-items-center">
+                <div class="sprite flex-shrink-0">
+                    <img src="image" alt="">
+                </div>
+                <div class="flex-grow-1">
+                    <div class="d-flex justify-content-between align-items-start">
+                        <h3 class="h6 mb-1">golduck</h3>
+                        <div class="text-muted small">000</div>
+                    </div>
+                    <div class="d-flex gap-2 mt-1">
+                        <span class="badge bg-warning text-dark type-badge">type</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </a>
+</article>
+
+<article class="col">
+    <a href="#" class="text-decoration-none">
+        <div class="card poke-card h-100 shadow-sm">
+            <div class="card-body d-flex gap-3 align-items-center">
+                <div class="sprite flex-shrink-0">
+                    <img src="image" alt="">
+                </div>
+                <div class="flex-grow-1">
+                    <div class="d-flex justify-content-between align-items-start">
+                        <h3 class="h6 mb-1">mankey</h3>
+                        <div class="text-muted small">000</div>
+                    </div>
+                    <div class="d-flex gap-2 mt-1">
+                        <span class="badge bg-warning text-dark type-badge">type</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </a>
+</article>
+
+<article class="col">
+    <a href="#" class="text-decoration-none">
+        <div class="card poke-card h-100 shadow-sm">
+            <div class="card-body d-flex gap-3 align-items-center">
+                <div class="sprite flex-shrink-0">
+                    <img src="image" alt="">
+                </div>
+                <div class="flex-grow-1">
+                    <div class="d-flex justify-content-between align-items-start">
+                        <h3 class="h6 mb-1">primeape</h3>
+                        <div class="text-muted small">000</div>
+                    </div>
+                    <div class="d-flex gap-2 mt-1">
+                        <span class="badge bg-warning text-dark type-badge">type</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </a>
+</article>
+
+<article class="col">
+    <a href="#" class="text-decoration-none">
+        <div class="card poke-card h-100 shadow-sm">
+            <div class="card-body d-flex gap-3 align-items-center">
+                <div class="sprite flex-shrink-0">
+                    <img src="image" alt="">
+                </div>
+                <div class="flex-grow-1">
+                    <div class="d-flex justify-content-between align-items-start">
+                        <h3 class="h6 mb-1">growlithe</h3>
+                        <div class="text-muted small">000</div>
+                    </div>
+                    <div class="d-flex gap-2 mt-1">
+                        <span class="badge bg-warning text-dark type-badge">type</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </a>
+</article>
+
+<article class="col">
+    <a href="#" class="text-decoration-none">
+        <div class="card poke-card h-100 shadow-sm">
+            <div class="card-body d-flex gap-3 align-items-center">
+                <div class="sprite flex-shrink-0">
+                    <img src="image" alt="">
+                </div>
+                <div class="flex-grow-1">
+                    <div class="d-flex justify-content-between align-items-start">
+                        <h3 class="h6 mb-1">arcanine</h3>
+                        <div class="text-muted small">000</div>
+                    </div>
+                    <div class="d-flex gap-2 mt-1">
+                        <span class="badge bg-warning text-dark type-badge">type</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </a>
+</article>
+
+<article class="col">
+    <a href="#" class="text-decoration-none">
+        <div class="card poke-card h-100 shadow-sm">
+            <div class="card-body d-flex gap-3 align-items-center">
+                <div class="sprite flex-shrink-0">
+                    <img src="image" alt="">
+                </div>
+                <div class="flex-grow-1">
+                    <div class="d-flex justify-content-between align-items-start">
+                        <h3 class="h6 mb-1">poliwag</h3>
+                        <div class="text-muted small">000</div>
+                    </div>
+                    <div class="d-flex gap-2 mt-1">
+                        <span class="badge bg-warning text-dark type-badge">type</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </a>
+</article>
+
+<article class="col">
+    <a href="#" class="text-decoration-none">
+        <div class="card poke-card h-100 shadow-sm">
+            <div class="card-body d-flex gap-3 align-items-center">
+                <div class="sprite flex-shrink-0">
+                    <img src="image" alt="">
+                </div>
+                <div class="flex-grow-1">
+                    <div class="d-flex justify-content-between align-items-start">
+                        <h3 class="h6 mb-1">poliwhirl</h3>
+                        <div class="text-muted small">000</div>
+                    </div>
+                    <div class="d-flex gap-2 mt-1">
+                        <span class="badge bg-warning text-dark type-badge">type</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </a>
+</article>
+
+<article class="col">
+    <a href="#" class="text-decoration-none">
+        <div class="card poke-card h-100 shadow-sm">
+            <div class="card-body d-flex gap-3 align-items-center">
+                <div class="sprite flex-shrink-0">
+                    <img src="image" alt="">
+                </div>
+                <div class="flex-grow-1">
+                    <div class="d-flex justify-content-between align-items-start">
+                        <h3 class="h6 mb-1">poliwrath</h3>
+                        <div class="text-muted small">000</div>
+                    </div>
+                    <div class="d-flex gap-2 mt-1">
+                        <span class="badge bg-warning text-dark type-badge">type</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </a>
+</article>
+
+<article class="col">
+    <a href="#" class="text-decoration-none">
+        <div class="card poke-card h-100 shadow-sm">
+            <div class="card-body d-flex gap-3 align-items-center">
+                <div class="sprite flex-shrink-0">
+                    <img src="image" alt="">
+                </div>
+                <div class="flex-grow-1">
+                    <div class="d-flex justify-content-between align-items-start">
+                        <h3 class="h6 mb-1">abra</h3>
+                        <div class="text-muted small">000</div>
+                    </div>
+                    <div class="d-flex gap-2 mt-1">
+                        <span class="badge bg-warning text-dark type-badge">type</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </a>
+</article>
+
+<article class="col">
+    <a href="#" class="text-decoration-none">
+        <div class="card poke-card h-100 shadow-sm">
+            <div class="card-body d-flex gap-3 align-items-center">
+                <div class="sprite flex-shrink-0">
+                    <img src="image" alt="">
+                </div>
+                <div class="flex-grow-1">
+                    <div class="d-flex justify-content-between align-items-start">
+                        <h3 class="h6 mb-1">kadabra</h3>
+                        <div class="text-muted small">000</div>
+                    </div>
+                    <div class="d-flex gap-2 mt-1">
+                        <span class="badge bg-warning text-dark type-badge">type</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </a>
+</article>
+
+<article class="col">
+    <a href="#" class="text-decoration-none">
+        <div class="card poke-card h-100 shadow-sm">
+            <div class="card-body d-flex gap-3 align-items-center">
+                <div class="sprite flex-shrink-0">
+                    <img src="image" alt="">
+                </div>
+                <div class="flex-grow-1">
+                    <div class="d-flex justify-content-between align-items-start">
+                        <h3 class="h6 mb-1">alakazam</h3>
+                        <div class="text-muted small">000</div>
+                    </div>
+                    <div class="d-flex gap-2 mt-1">
+                        <span class="badge bg-warning text-dark type-badge">type</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </a>
+</article>
+
+<article class="col">
+    <a href="#" class="text-decoration-none">
+        <div class="card poke-card h-100 shadow-sm">
+            <div class="card-body d-flex gap-3 align-items-center">
+                <div class="sprite flex-shrink-0">
+                    <img src="image" alt="">
+                </div>
+                <div class="flex-grow-1">
+                    <div class="d-flex justify-content-between align-items-start">
+                        <h3 class="h6 mb-1">machop</h3>
+                        <div class="text-muted small">000</div>
+                    </div>
+                    <div class="d-flex gap-2 mt-1">
+                        <span class="badge bg-warning text-dark type-badge">type</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </a>
+</article>
+
+<article class="col">
+    <a href="#" class="text-decoration-none">
+        <div class="card poke-card h-100 shadow-sm">
+            <div class="card-body d-flex gap-3 align-items-center">
+                <div class="sprite flex-shrink-0">
+                    <img src="image" alt="">
+                </div>
+                <div class="flex-grow-1">
+                    <div class="d-flex justify-content-between align-items-start">
+                        <h3 class="h6 mb-1">machoke</h3>
+                        <div class="text-muted small">000</div>
+                    </div>
+                    <div class="d-flex gap-2 mt-1">
+                        <span class="badge bg-warning text-dark type-badge">type</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </a>
+</article>
+
+<article class="col">
+    <a href="#" class="text-decoration-none">
+        <div class="card poke-card h-100 shadow-sm">
+            <div class="card-body d-flex gap-3 align-items-center">
+                <div class="sprite flex-shrink-0">
+                    <img src="image" alt="">
+                </div>
+                <div class="flex-grow-1">
+                    <div class="d-flex justify-content-between align-items-start">
+                        <h3 class="h6 mb-1">machamp</h3>
+                        <div class="text-muted small">000</div>
+                    </div>
+                    <div class="d-flex gap-2 mt-1">
+                        <span class="badge bg-warning text-dark type-badge">type</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </a>
+</article>
+
+<article class="col">
+    <a href="#" class="text-decoration-none">
+        <div class="card poke-card h-100 shadow-sm">
+            <div class="card-body d-flex gap-3 align-items-center">
+                <div class="sprite flex-shrink-0">
+                    <img src="image" alt="">
+                </div>
+                <div class="flex-grow-1">
+                    <div class="d-flex justify-content-between align-items-start">
+                        <h3 class="h6 mb-1">bellsprout</h3>
+                        <div class="text-muted small">000</div>
+                    </div>
+                    <div class="d-flex gap-2 mt-1">
+                        <span class="badge bg-warning text-dark type-badge">type</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </a>
+</article>
+
+<article class="col">
+    <a href="#" class="text-decoration-none">
+        <div class="card poke-card h-100 shadow-sm">
+            <div class="card-body d-flex gap-3 align-items-center">
+                <div class="sprite flex-shrink-0">
+                    <img src="image" alt="">
+                </div>
+                <div class="flex-grow-1">
+                    <div class="d-flex justify-content-between align-items-start">
+                        <h3 class="h6 mb-1">weepinbell</h3>
+                        <div class="text-muted small">000</div>
+                    </div>
+                    <div class="d-flex gap-2 mt-1">
+                        <span class="badge bg-warning text-dark type-badge">type</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </a>
+</article>
+
+<article class="col">
+    <a href="#" class="text-decoration-none">
+        <div class="card poke-card h-100 shadow-sm">
+            <div class="card-body d-flex gap-3 align-items-center">
+                <div class="sprite flex-shrink-0">
+                    <img src="image" alt="">
+                </div>
+                <div class="flex-grow-1">
+                    <div class="d-flex justify-content-between align-items-start">
+                        <h3 class="h6 mb-1">victreebel</h3>
+                        <div class="text-muted small">000</div>
+                    </div>
+                    <div class="d-flex gap-2 mt-1">
+                        <span class="badge bg-warning text-dark type-badge">type</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </a>
+</article>
+
+<article class="col">
+    <a href="#" class="text-decoration-none">
+        <div class="card poke-card h-100 shadow-sm">
+            <div class="card-body d-flex gap-3 align-items-center">
+                <div class="sprite flex-shrink-0">
+                    <img src="image" alt="">
+                </div>
+                <div class="flex-grow-1">
+                    <div class="d-flex justify-content-between align-items-start">
+                        <h3 class="h6 mb-1">tentacool</h3>
+                        <div class="text-muted small">000</div>
+                    </div>
+                    <div class="d-flex gap-2 mt-1">
+                        <span class="badge bg-warning text-dark type-badge">type</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </a>
+</article>
+
+<article class="col">
+    <a href="#" class="text-decoration-none">
+        <div class="card poke-card h-100 shadow-sm">
+            <div class="card-body d-flex gap-3 align-items-center">
+                <div class="sprite flex-shrink-0">
+                    <img src="image" alt="">
+                </div>
+                <div class="flex-grow-1">
+                    <div class="d-flex justify-content-between align-items-start">
+                        <h3 class="h6 mb-1">tentacruel</h3>
+                        <div class="text-muted small">000</div>
+                    </div>
+                    <div class="d-flex gap-2 mt-1">
+                        <span class="badge bg-warning text-dark type-badge">type</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </a>
+</article>
+
+<article class="col">
+    <a href="#" class="text-decoration-none">
+        <div class="card poke-card h-100 shadow-sm">
+            <div class="card-body d-flex gap-3 align-items-center">
+                <div class="sprite flex-shrink-0">
+                    <img src="image" alt="">
+                </div>
+                <div class="flex-grow-1">
+                    <div class="d-flex justify-content-between align-items-start">
+                        <h3 class="h6 mb-1">geodude</h3>
+                        <div class="text-muted small">000</div>
+                    </div>
+                    <div class="d-flex gap-2 mt-1">
+                        <span class="badge bg-warning text-dark type-badge">type</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </a>
+</article>
+
+<article class="col">
+    <a href="#" class="text-decoration-none">
+        <div class="card poke-card h-100 shadow-sm">
+            <div class="card-body d-flex gap-3 align-items-center">
+                <div class="sprite flex-shrink-0">
+                    <img src="image" alt="">
+                </div>
+                <div class="flex-grow-1">
+                    <div class="d-flex justify-content-between align-items-start">
+                        <h3 class="h6 mb-1">graveler</h3>
+                        <div class="text-muted small">000</div>
+                    </div>
+                    <div class="d-flex gap-2 mt-1">
+                        <span class="badge bg-warning text-dark type-badge">type</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </a>
+</article>
+
+<article class="col">
+    <a href="#" class="text-decoration-none">
+        <div class="card poke-card h-100 shadow-sm">
+            <div class="card-body d-flex gap-3 align-items-center">
+                <div class="sprite flex-shrink-0">
+                    <img src="image" alt="">
+                </div>
+                <div class="flex-grow-1">
+                    <div class="d-flex justify-content-between align-items-start">
+                        <h3 class="h6 mb-1">golem</h3>
+                        <div class="text-muted small">000</div>
+                    </div>
+                    <div class="d-flex gap-2 mt-1">
+                        <span class="badge bg-warning text-dark type-badge">type</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </a>
+</article>
+
+<article class="col">
+    <a href="#" class="text-decoration-none">
+        <div class="card poke-card h-100 shadow-sm">
+            <div class="card-body d-flex gap-3 align-items-center">
+                <div class="sprite flex-shrink-0">
+                    <img src="image" alt="">
+                </div>
+                <div class="flex-grow-1">
+                    <div class="d-flex justify-content-between align-items-start">
+                        <h3 class="h6 mb-1">ponyta</h3>
+                        <div class="text-muted small">000</div>
+                    </div>
+                    <div class="d-flex gap-2 mt-1">
+                        <span class="badge bg-warning text-dark type-badge">type</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </a>
+</article>
+
+<article class="col">
+    <a href="#" class="text-decoration-none">
+        <div class="card poke-card h-100 shadow-sm">
+            <div class="card-body d-flex gap-3 align-items-center">
+                <div class="sprite flex-shrink-0">
+                    <img src="image" alt="">
+                </div>
+                <div class="flex-grow-1">
+                    <div class="d-flex justify-content-between align-items-start">
+                        <h3 class="h6 mb-1">rapidash</h3>
+                        <div class="text-muted small">000</div>
+                    </div>
+                    <div class="d-flex gap-2 mt-1">
+                        <span class="badge bg-warning text-dark type-badge">type</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </a>
+</article>
+
+<article class="col">
+    <a href="#" class="text-decoration-none">
+        <div class="card poke-card h-100 shadow-sm">
+            <div class="card-body d-flex gap-3 align-items-center">
+                <div class="sprite flex-shrink-0">
+                    <img src="image" alt="">
+                </div>
+                <div class="flex-grow-1">
+                    <div class="d-flex justify-content-between align-items-start">
+                        <h3 class="h6 mb-1">slowpoke</h3>
+                        <div class="text-muted small">000</div>
+                    </div>
+                    <div class="d-flex gap-2 mt-1">
+                        <span class="badge bg-warning text-dark type-badge">type</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </a>
+</article>
+
+<article class="col">
+    <a href="#" class="text-decoration-none">
+        <div class="card poke-card h-100 shadow-sm">
+            <div class="card-body d-flex gap-3 align-items-center">
+                <div class="sprite flex-shrink-0">
+                    <img src="image" alt="">
+                </div>
+                <div class="flex-grow-1">
+                    <div class="d-flex justify-content-between align-items-start">
+                        <h3 class="h6 mb-1">slowbro</h3>
+                        <div class="text-muted small">000</div>
+                    </div>
+                    <div class="d-flex gap-2 mt-1">
+                        <span class="badge bg-warning text-dark type-badge">type</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </a>
+</article>
+
+<article class="col">
+    <a href="#" class="text-decoration-none">
+        <div class="card poke-card h-100 shadow-sm">
+            <div class="card-body d-flex gap-3 align-items-center">
+                <div class="sprite flex-shrink-0">
+                    <img src="image" alt="">
+                </div>
+                <div class="flex-grow-1">
+                    <div class="d-flex justify-content-between align-items-start">
+                        <h3 class="h6 mb-1">magnemite</h3>
+                        <div class="text-muted small">000</div>
+                    </div>
+                    <div class="d-flex gap-2 mt-1">
+                        <span class="badge bg-warning text-dark type-badge">type</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </a>
+</article>
+
+<article class="col">
+    <a href="#" class="text-decoration-none">
+        <div class="card poke-card h-100 shadow-sm">
+            <div class="card-body d-flex gap-3 align-items-center">
+                <div class="sprite flex-shrink-0">
+                    <img src="image" alt="">
+                </div>
+                <div class="flex-grow-1">
+                    <div class="d-flex justify-content-between align-items-start">
+                        <h3 class="h6 mb-1">magneton</h3>
+                        <div class="text-muted small">000</div>
+                    </div>
+                    <div class="d-flex gap-2 mt-1">
+                        <span class="badge bg-warning text-dark type-badge">type</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </a>
+</article>
+
+<article class="col">
+    <a href="#" class="text-decoration-none">
+        <div class="card poke-card h-100 shadow-sm">
+            <div class="card-body d-flex gap-3 align-items-center">
+                <div class="sprite flex-shrink-0">
+                    <img src="image" alt="">
+                </div>
+                <div class="flex-grow-1">
+                    <div class="d-flex justify-content-between align-items-start">
+                        <h3 class="h6 mb-1">farfetchd</h3>
+                        <div class="text-muted small">000</div>
+                    </div>
+                    <div class="d-flex gap-2 mt-1">
+                        <span class="badge bg-warning text-dark type-badge">type</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </a>
+</article>
+
+<article class="col">
+    <a href="#" class="text-decoration-none">
+        <div class="card poke-card h-100 shadow-sm">
+            <div class="card-body d-flex gap-3 align-items-center">
+                <div class="sprite flex-shrink-0">
+                    <img src="image" alt="">
+                </div>
+                <div class="flex-grow-1">
+                    <div class="d-flex justify-content-between align-items-start">
+                        <h3 class="h6 mb-1">doduo</h3>
+                        <div class="text-muted small">000</div>
+                    </div>
+                    <div class="d-flex gap-2 mt-1">
+                        <span class="badge bg-warning text-dark type-badge">type</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </a>
+</article>
+
+<article class="col">
+    <a href="#" class="text-decoration-none">
+        <div class="card poke-card h-100 shadow-sm">
+            <div class="card-body d-flex gap-3 align-items-center">
+                <div class="sprite flex-shrink-0">
+                    <img src="image" alt="">
+                </div>
+                <div class="flex-grow-1">
+                    <div class="d-flex justify-content-between align-items-start">
+                        <h3 class="h6 mb-1">dodrio</h3>
+                        <div class="text-muted small">000</div>
+                    </div>
+                    <div class="d-flex gap-2 mt-1">
+                        <span class="badge bg-warning text-dark type-badge">type</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </a>
+</article>
+
+<article class="col">
+    <a href="#" class="text-decoration-none">
+        <div class="card poke-card h-100 shadow-sm">
+            <div class="card-body d-flex gap-3 align-items-center">
+                <div class="sprite flex-shrink-0">
+                    <img src="image" alt="">
+                </div>
+                <div class="flex-grow-1">
+                    <div class="d-flex justify-content-between align-items-start">
+                        <h3 class="h6 mb-1">seel</h3>
+                        <div class="text-muted small">000</div>
+                    </div>
+                    <div class="d-flex gap-2 mt-1">
+                        <span class="badge bg-warning text-dark type-badge">type</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </a>
+</article>
+
+<article class="col">
+    <a href="#" class="text-decoration-none">
+        <div class="card poke-card h-100 shadow-sm">
+            <div class="card-body d-flex gap-3 align-items-center">
+                <div class="sprite flex-shrink-0">
+                    <img src="image" alt="">
+                </div>
+                <div class="flex-grow-1">
+                    <div class="d-flex justify-content-between align-items-start">
+                        <h3 class="h6 mb-1">dewgong</h3>
+                        <div class="text-muted small">000</div>
+                    </div>
+                    <div class="d-flex gap-2 mt-1">
+                        <span class="badge bg-warning text-dark type-badge">type</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </a>
+</article>
+
+<article class="col">
+    <a href="#" class="text-decoration-none">
+        <div class="card poke-card h-100 shadow-sm">
+            <div class="card-body d-flex gap-3 align-items-center">
+                <div class="sprite flex-shrink-0">
+                    <img src="image" alt="">
+                </div>
+                <div class="flex-grow-1">
+                    <div class="d-flex justify-content-between align-items-start">
+                        <h3 class="h6 mb-1">grimer</h3>
+                        <div class="text-muted small">000</div>
+                    </div>
+                    <div class="d-flex gap-2 mt-1">
+                        <span class="badge bg-warning text-dark type-badge">type</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </a>
+</article>
+
+<article class="col">
+    <a href="#" class="text-decoration-none">
+        <div class="card poke-card h-100 shadow-sm">
+            <div class="card-body d-flex gap-3 align-items-center">
+                <div class="sprite flex-shrink-0">
+                    <img src="image" alt="">
+                </div>
+                <div class="flex-grow-1">
+                    <div class="d-flex justify-content-between align-items-start">
+                        <h3 class="h6 mb-1">muk</h3>
+                        <div class="text-muted small">000</div>
+                    </div>
+                    <div class="d-flex gap-2 mt-1">
+                        <span class="badge bg-warning text-dark type-badge">type</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </a>
+</article>
+
+<article class="col">
+    <a href="#" class="text-decoration-none">
+        <div class="card poke-card h-100 shadow-sm">
+            <div class="card-body d-flex gap-3 align-items-center">
+                <div class="sprite flex-shrink-0">
+                    <img src="image" alt="">
+                </div>
+                <div class="flex-grow-1">
+                    <div class="d-flex justify-content-between align-items-start">
+                        <h3 class="h6 mb-1">shellder</h3>
+                        <div class="text-muted small">000</div>
+                    </div>
+                    <div class="d-flex gap-2 mt-1">
+                        <span class="badge bg-warning text-dark type-badge">type</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </a>
+</article>
+
+<article class="col">
+    <a href="#" class="text-decoration-none">
+        <div class="card poke-card h-100 shadow-sm">
+            <div class="card-body d-flex gap-3 align-items-center">
+                <div class="sprite flex-shrink-0">
+                    <img src="image" alt="">
+                </div>
+                <div class="flex-grow-1">
+                    <div class="d-flex justify-content-between align-items-start">
+                        <h3 class="h6 mb-1">cloyster</h3>
+                        <div class="text-muted small">000</div>
+                    </div>
+                    <div class="d-flex gap-2 mt-1">
+                        <span class="badge bg-warning text-dark type-badge">type</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </a>
+</article>
+
+<article class="col">
+    <a href="#" class="text-decoration-none">
+        <div class="card poke-card h-100 shadow-sm">
+            <div class="card-body d-flex gap-3 align-items-center">
+                <div class="sprite flex-shrink-0">
+                    <img src="image" alt="">
+                </div>
+                <div class="flex-grow-1">
+                    <div class="d-flex justify-content-between align-items-start">
+                        <h3 class="h6 mb-1">gastly</h3>
+                        <div class="text-muted small">000</div>
+                    </div>
+                    <div class="d-flex gap-2 mt-1">
+                        <span class="badge bg-warning text-dark type-badge">type</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </a>
+</article>
+
+<article class="col">
+    <a href="#" class="text-decoration-none">
+        <div class="card poke-card h-100 shadow-sm">
+            <div class="card-body d-flex gap-3 align-items-center">
+                <div class="sprite flex-shrink-0">
+                    <img src="image" alt="">
+                </div>
+                <div class="flex-grow-1">
+                    <div class="d-flex justify-content-between align-items-start">
+                        <h3 class="h6 mb-1">haunter</h3>
+                        <div class="text-muted small">000</div>
+                    </div>
+                    <div class="d-flex gap-2 mt-1">
+                        <span class="badge bg-warning text-dark type-badge">type</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </a>
+</article>
+
+<article class="col">
+    <a href="#" class="text-decoration-none">
+        <div class="card poke-card h-100 shadow-sm">
+            <div class="card-body d-flex gap-3 align-items-center">
+                <div class="sprite flex-shrink-0">
+                    <img src="image" alt="">
+                </div>
+                <div class="flex-grow-1">
+                    <div class="d-flex justify-content-between align-items-start">
+                        <h3 class="h6 mb-1">gengar</h3>
+                        <div class="text-muted small">000</div>
+                    </div>
+                    <div class="d-flex gap-2 mt-1">
+                        <span class="badge bg-warning text-dark type-badge">type</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </a>
+</article>
+
+<article class="col">
+    <a href="#" class="text-decoration-none">
+        <div class="card poke-card h-100 shadow-sm">
+            <div class="card-body d-flex gap-3 align-items-center">
+                <div class="sprite flex-shrink-0">
+                    <img src="image" alt="">
+                </div>
+                <div class="flex-grow-1">
+                    <div class="d-flex justify-content-between align-items-start">
+                        <h3 class="h6 mb-1">onix</h3>
+                        <div class="text-muted small">000</div>
+                    </div>
+                    <div class="d-flex gap-2 mt-1">
+                        <span class="badge bg-warning text-dark type-badge">type</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </a>
+</article>
+
+<article class="col">
+    <a href="#" class="text-decoration-none">
+        <div class="card poke-card h-100 shadow-sm">
+            <div class="card-body d-flex gap-3 align-items-center">
+                <div class="sprite flex-shrink-0">
+                    <img src="image" alt="">
+                </div>
+                <div class="flex-grow-1">
+                    <div class="d-flex justify-content-between align-items-start">
+                        <h3 class="h6 mb-1">drowzee</h3>
+                        <div class="text-muted small">000</div>
+                    </div>
+                    <div class="d-flex gap-2 mt-1">
+                        <span class="badge bg-warning text-dark type-badge">type</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </a>
+</article>
+
+<article class="col">
+    <a href="#" class="text-decoration-none">
+        <div class="card poke-card h-100 shadow-sm">
+            <div class="card-body d-flex gap-3 align-items-center">
+                <div class="sprite flex-shrink-0">
+                    <img src="image" alt="">
+                </div>
+                <div class="flex-grow-1">
+                    <div class="d-flex justify-content-between align-items-start">
+                        <h3 class="h6 mb-1">hypno</h3>
+                        <div class="text-muted small">000</div>
+                    </div>
+                    <div class="d-flex gap-2 mt-1">
+                        <span class="badge bg-warning text-dark type-badge">type</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </a>
+</article>
+
+<article class="col">
+    <a href="#" class="text-decoration-none">
+        <div class="card poke-card h-100 shadow-sm">
+            <div class="card-body d-flex gap-3 align-items-center">
+                <div class="sprite flex-shrink-0">
+                    <img src="image" alt="">
+                </div>
+                <div class="flex-grow-1">
+                    <div class="d-flex justify-content-between align-items-start">
+                        <h3 class="h6 mb-1">krabby</h3>
+                        <div class="text-muted small">000</div>
+                    </div>
+                    <div class="d-flex gap-2 mt-1">
+                        <span class="badge bg-warning text-dark type-badge">type</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </a>
+</article>
+
+<article class="col">
+    <a href="#" class="text-decoration-none">
+        <div class="card poke-card h-100 shadow-sm">
+            <div class="card-body d-flex gap-3 align-items-center">
+                <div class="sprite flex-shrink-0">
+                    <img src="image" alt="">
+                </div>
+                <div class="flex-grow-1">
+                    <div class="d-flex justify-content-between align-items-start">
+                        <h3 class="h6 mb-1">kingler</h3>
+                        <div class="text-muted small">000</div>
+                    </div>
+                    <div class="d-flex gap-2 mt-1">
+                        <span class="badge bg-warning text-dark type-badge">type</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </a>
+</article>
+
+<article class="col">
+    <a href="#" class="text-decoration-none">
+        <div class="card poke-card h-100 shadow-sm">
+            <div class="card-body d-flex gap-3 align-items-center">
+                <div class="sprite flex-shrink-0">
+                    <img src="image" alt="">
+                </div>
+                <div class="flex-grow-1">
+                    <div class="d-flex justify-content-between align-items-start">
+                        <h3 class="h6 mb-1">voltorb</h3>
+                        <div class="text-muted small">000</div>
+                    </div>
+                    <div class="d-flex gap-2 mt-1">
+                        <span class="badge bg-warning text-dark type-badge">type</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </a>
+</article>
+
+<article class="col">
+    <a href="#" class="text-decoration-none">
+        <div class="card poke-card h-100 shadow-sm">
+            <div class="card-body d-flex gap-3 align-items-center">
+                <div class="sprite flex-shrink-0">
+                    <img src="image" alt="">
+                </div>
+                <div class="flex-grow-1">
+                    <div class="d-flex justify-content-between align-items-start">
+                        <h3 class="h6 mb-1">electrode</h3>
+                        <div class="text-muted small">000</div>
+                    </div>
+                    <div class="d-flex gap-2 mt-1">
+                        <span class="badge bg-warning text-dark type-badge">type</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </a>
+</article>
+
+<article class="col">
+    <a href="#" class="text-decoration-none">
+        <div class="card poke-card h-100 shadow-sm">
+            <div class="card-body d-flex gap-3 align-items-center">
+                <div class="sprite flex-shrink-0">
+                    <img src="image" alt="">
+                </div>
+                <div class="flex-grow-1">
+                    <div class="d-flex justify-content-between align-items-start">
+                        <h3 class="h6 mb-1">exeggcute</h3>
+                        <div class="text-muted small">000</div>
+                    </div>
+                    <div class="d-flex gap-2 mt-1">
+                        <span class="badge bg-warning text-dark type-badge">type</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </a>
+</article>
+
+<article class="col">
+    <a href="#" class="text-decoration-none">
+        <div class="card poke-card h-100 shadow-sm">
+            <div class="card-body d-flex gap-3 align-items-center">
+                <div class="sprite flex-shrink-0">
+                    <img src="image" alt="">
+                </div>
+                <div class="flex-grow-1">
+                    <div class="d-flex justify-content-between align-items-start">
+                        <h3 class="h6 mb-1">exeggutor</h3>
+                        <div class="text-muted small">000</div>
+                    </div>
+                    <div class="d-flex gap-2 mt-1">
+                        <span class="badge bg-warning text-dark type-badge">type</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </a>
+</article>
+
+<article class="col">
+    <a href="#" class="text-decoration-none">
+        <div class="card poke-card h-100 shadow-sm">
+            <div class="card-body d-flex gap-3 align-items-center">
+                <div class="sprite flex-shrink-0">
+                    <img src="image" alt="">
+                </div>
+                <div class="flex-grow-1">
+                    <div class="d-flex justify-content-between align-items-start">
+                        <h3 class="h6 mb-1">cubone</h3>
+                        <div class="text-muted small">000</div>
+                    </div>
+                    <div class="d-flex gap-2 mt-1">
+                        <span class="badge bg-warning text-dark type-badge">type</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </a>
+</article>
+
+<article class="col">
+    <a href="#" class="text-decoration-none">
+        <div class="card poke-card h-100 shadow-sm">
+            <div class="card-body d-flex gap-3 align-items-center">
+                <div class="sprite flex-shrink-0">
+                    <img src="image" alt="">
+                </div>
+                <div class="flex-grow-1">
+                    <div class="d-flex justify-content-between align-items-start">
+                        <h3 class="h6 mb-1">marowak</h3>
+                        <div class="text-muted small">000</div>
+                    </div>
+                    <div class="d-flex gap-2 mt-1">
+                        <span class="badge bg-warning text-dark type-badge">type</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </a>
+</article>
+
+<article class="col">
+    <a href="#" class="text-decoration-none">
+        <div class="card poke-card h-100 shadow-sm">
+            <div class="card-body d-flex gap-3 align-items-center">
+                <div class="sprite flex-shrink-0">
+                    <img src="image" alt="">
+                </div>
+                <div class="flex-grow-1">
+                    <div class="d-flex justify-content-between align-items-start">
+                        <h3 class="h6 mb-1">hitmonlee</h3>
+                        <div class="text-muted small">000</div>
+                    </div>
+                    <div class="d-flex gap-2 mt-1">
+                        <span class="badge bg-warning text-dark type-badge">type</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </a>
+</article>
+
+<article class="col">
+    <a href="#" class="text-decoration-none">
+        <div class="card poke-card h-100 shadow-sm">
+            <div class="card-body d-flex gap-3 align-items-center">
+                <div class="sprite flex-shrink-0">
+                    <img src="image" alt="">
+                </div>
+                <div class="flex-grow-1">
+                    <div class="d-flex justify-content-between align-items-start">
+                        <h3 class="h6 mb-1">hitmonchan</h3>
+                        <div class="text-muted small">000</div>
+                    </div>
+                    <div class="d-flex gap-2 mt-1">
+                        <span class="badge bg-warning text-dark type-badge">type</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </a>
+</article>
+
+<article class="col">
+    <a href="#" class="text-decoration-none">
+        <div class="card poke-card h-100 shadow-sm">
+            <div class="card-body d-flex gap-3 align-items-center">
+                <div class="sprite flex-shrink-0">
+                    <img src="image" alt="">
+                </div>
+                <div class="flex-grow-1">
+                    <div class="d-flex justify-content-between align-items-start">
+                        <h3 class="h6 mb-1">lickitung</h3>
+                        <div class="text-muted small">000</div>
+                    </div>
+                    <div class="d-flex gap-2 mt-1">
+                        <span class="badge bg-warning text-dark type-badge">type</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </a>
+</article>
+
+<article class="col">
+    <a href="#" class="text-decoration-none">
+        <div class="card poke-card h-100 shadow-sm">
+            <div class="card-body d-flex gap-3 align-items-center">
+                <div class="sprite flex-shrink-0">
+                    <img src="image" alt="">
+                </div>
+                <div class="flex-grow-1">
+                    <div class="d-flex justify-content-between align-items-start">
+                        <h3 class="h6 mb-1">koffing</h3>
+                        <div class="text-muted small">000</div>
+                    </div>
+                    <div class="d-flex gap-2 mt-1">
+                        <span class="badge bg-warning text-dark type-badge">type</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </a>
+</article>
+
+<article class="col">
+    <a href="#" class="text-decoration-none">
+        <div class="card poke-card h-100 shadow-sm">
+            <div class="card-body d-flex gap-3 align-items-center">
+                <div class="sprite flex-shrink-0">
+                    <img src="image" alt="">
+                </div>
+                <div class="flex-grow-1">
+                    <div class="d-flex justify-content-between align-items-start">
+                        <h3 class="h6 mb-1">weezing</h3>
+                        <div class="text-muted small">000</div>
+                    </div>
+                    <div class="d-flex gap-2 mt-1">
+                        <span class="badge bg-warning text-dark type-badge">type</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </a>
+</article>
+
+<article class="col">
+    <a href="#" class="text-decoration-none">
+        <div class="card poke-card h-100 shadow-sm">
+            <div class="card-body d-flex gap-3 align-items-center">
+                <div class="sprite flex-shrink-0">
+                    <img src="image" alt="">
+                </div>
+                <div class="flex-grow-1">
+                    <div class="d-flex justify-content-between align-items-start">
+                        <h3 class="h6 mb-1">rhyhorn</h3>
+                        <div class="text-muted small">000</div>
+                    </div>
+                    <div class="d-flex gap-2 mt-1">
+                        <span class="badge bg-warning text-dark type-badge">type</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </a>
+</article>
+
+<article class="col">
+    <a href="#" class="text-decoration-none">
+        <div class="card poke-card h-100 shadow-sm">
+            <div class="card-body d-flex gap-3 align-items-center">
+                <div class="sprite flex-shrink-0">
+                    <img src="image" alt="">
+                </div>
+                <div class="flex-grow-1">
+                    <div class="d-flex justify-content-between align-items-start">
+                        <h3 class="h6 mb-1">rhydon</h3>
+                        <div class="text-muted small">000</div>
+                    </div>
+                    <div class="d-flex gap-2 mt-1">
+                        <span class="badge bg-warning text-dark type-badge">type</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </a>
+</article>
+
+<article class="col">
+    <a href="#" class="text-decoration-none">
+        <div class="card poke-card h-100 shadow-sm">
+            <div class="card-body d-flex gap-3 align-items-center">
+                <div class="sprite flex-shrink-0">
+                    <img src="image" alt="">
+                </div>
+                <div class="flex-grow-1">
+                    <div class="d-flex justify-content-between align-items-start">
+                        <h3 class="h6 mb-1">chansey</h3>
+                        <div class="text-muted small">000</div>
+                    </div>
+                    <div class="d-flex gap-2 mt-1">
+                        <span class="badge bg-warning text-dark type-badge">type</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </a>
+</article>
+
+<article class="col">
+    <a href="#" class="text-decoration-none">
+        <div class="card poke-card h-100 shadow-sm">
+            <div class="card-body d-flex gap-3 align-items-center">
+                <div class="sprite flex-shrink-0">
+                    <img src="image" alt="">
+                </div>
+                <div class="flex-grow-1">
+                    <div class="d-flex justify-content-between align-items-start">
+                        <h3 class="h6 mb-1">tangela</h3>
+                        <div class="text-muted small">000</div>
+                    </div>
+                    <div class="d-flex gap-2 mt-1">
+                        <span class="badge bg-warning text-dark type-badge">type</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </a>
+</article>
+
+<article class="col">
+    <a href="#" class="text-decoration-none">
+        <div class="card poke-card h-100 shadow-sm">
+            <div class="card-body d-flex gap-3 align-items-center">
+                <div class="sprite flex-shrink-0">
+                    <img src="image" alt="">
+                </div>
+                <div class="flex-grow-1">
+                    <div class="d-flex justify-content-between align-items-start">
+                        <h3 class="h6 mb-1">kangaskhan</h3>
+                        <div class="text-muted small">000</div>
+                    </div>
+                    <div class="d-flex gap-2 mt-1">
+                        <span class="badge bg-warning text-dark type-badge">type</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </a>
+</article>
+
+<article class="col">
+    <a href="#" class="text-decoration-none">
+        <div class="card poke-card h-100 shadow-sm">
+            <div class="card-body d-flex gap-3 align-items-center">
+                <div class="sprite flex-shrink-0">
+                    <img src="image" alt="">
+                </div>
+                <div class="flex-grow-1">
+                    <div class="d-flex justify-content-between align-items-start">
+                        <h3 class="h6 mb-1">horsea</h3>
+                        <div class="text-muted small">000</div>
+                    </div>
+                    <div class="d-flex gap-2 mt-1">
+                        <span class="badge bg-warning text-dark type-badge">type</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </a>
+</article>
+
+<article class="col">
+    <a href="#" class="text-decoration-none">
+        <div class="card poke-card h-100 shadow-sm">
+            <div class="card-body d-flex gap-3 align-items-center">
+                <div class="sprite flex-shrink-0">
+                    <img src="image" alt="">
+                </div>
+                <div class="flex-grow-1">
+                    <div class="d-flex justify-content-between align-items-start">
+                        <h3 class="h6 mb-1">seadra</h3>
+                        <div class="text-muted small">000</div>
+                    </div>
+                    <div class="d-flex gap-2 mt-1">
+                        <span class="badge bg-warning text-dark type-badge">type</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </a>
+</article>
+
+<article class="col">
+    <a href="#" class="text-decoration-none">
+        <div class="card poke-card h-100 shadow-sm">
+            <div class="card-body d-flex gap-3 align-items-center">
+                <div class="sprite flex-shrink-0">
+                    <img src="image" alt="">
+                </div>
+                <div class="flex-grow-1">
+                    <div class="d-flex justify-content-between align-items-start">
+                        <h3 class="h6 mb-1">goldeen</h3>
+                        <div class="text-muted small">000</div>
+                    </div>
+                    <div class="d-flex gap-2 mt-1">
+                        <span class="badge bg-warning text-dark type-badge">type</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </a>
+</article>
+
+<article class="col">
+    <a href="#" class="text-decoration-none">
+        <div class="card poke-card h-100 shadow-sm">
+            <div class="card-body d-flex gap-3 align-items-center">
+                <div class="sprite flex-shrink-0">
+                    <img src="image" alt="">
+                </div>
+                <div class="flex-grow-1">
+                    <div class="d-flex justify-content-between align-items-start">
+                        <h3 class="h6 mb-1">seaking</h3>
+                        <div class="text-muted small">000</div>
+                    </div>
+                    <div class="d-flex gap-2 mt-1">
+                        <span class="badge bg-warning text-dark type-badge">type</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </a>
+</article>
+
+<article class="col">
+    <a href="#" class="text-decoration-none">
+        <div class="card poke-card h-100 shadow-sm">
+            <div class="card-body d-flex gap-3 align-items-center">
+                <div class="sprite flex-shrink-0">
+                    <img src="image" alt="">
+                </div>
+                <div class="flex-grow-1">
+                    <div class="d-flex justify-content-between align-items-start">
+                        <h3 class="h6 mb-1">staryu</h3>
+                        <div class="text-muted small">000</div>
+                    </div>
+                    <div class="d-flex gap-2 mt-1">
+                        <span class="badge bg-warning text-dark type-badge">type</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </a>
+</article>
+
+<article class="col">
+    <a href="#" class="text-decoration-none">
+        <div class="card poke-card h-100 shadow-sm">
+            <div class="card-body d-flex gap-3 align-items-center">
+                <div class="sprite flex-shrink-0">
+                    <img src="image" alt="">
+                </div>
+                <div class="flex-grow-1">
+                    <div class="d-flex justify-content-between align-items-start">
+                        <h3 class="h6 mb-1">starmie</h3>
+                        <div class="text-muted small">000</div>
+                    </div>
+                    <div class="d-flex gap-2 mt-1">
+                        <span class="badge bg-warning text-dark type-badge">type</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </a>
+</article>
+
+<article class="col">
+    <a href="#" class="text-decoration-none">
+        <div class="card poke-card h-100 shadow-sm">
+            <div class="card-body d-flex gap-3 align-items-center">
+                <div class="sprite flex-shrink-0">
+                    <img src="image" alt="">
+                </div>
+                <div class="flex-grow-1">
+                    <div class="d-flex justify-content-between align-items-start">
+                        <h3 class="h6 mb-1">mr-mime</h3>
+                        <div class="text-muted small">000</div>
+                    </div>
+                    <div class="d-flex gap-2 mt-1">
+                        <span class="badge bg-warning text-dark type-badge">type</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </a>
+</article>
+
+<article class="col">
+    <a href="#" class="text-decoration-none">
+        <div class="card poke-card h-100 shadow-sm">
+            <div class="card-body d-flex gap-3 align-items-center">
+                <div class="sprite flex-shrink-0">
+                    <img src="image" alt="">
+                </div>
+                <div class="flex-grow-1">
+                    <div class="d-flex justify-content-between align-items-start">
+                        <h3 class="h6 mb-1">scyther</h3>
+                        <div class="text-muted small">000</div>
+                    </div>
+                    <div class="d-flex gap-2 mt-1">
+                        <span class="badge bg-warning text-dark type-badge">type</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </a>
+</article>
+
+<article class="col">
+    <a href="#" class="text-decoration-none">
+        <div class="card poke-card h-100 shadow-sm">
+            <div class="card-body d-flex gap-3 align-items-center">
+                <div class="sprite flex-shrink-0">
+                    <img src="image" alt="">
+                </div>
+                <div class="flex-grow-1">
+                    <div class="d-flex justify-content-between align-items-start">
+                        <h3 class="h6 mb-1">jynx</h3>
+                        <div class="text-muted small">000</div>
+                    </div>
+                    <div class="d-flex gap-2 mt-1">
+                        <span class="badge bg-warning text-dark type-badge">type</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </a>
+</article>
+
+<article class="col">
+    <a href="#" class="text-decoration-none">
+        <div class="card poke-card h-100 shadow-sm">
+            <div class="card-body d-flex gap-3 align-items-center">
+                <div class="sprite flex-shrink-0">
+                    <img src="image" alt="">
+                </div>
+                <div class="flex-grow-1">
+                    <div class="d-flex justify-content-between align-items-start">
+                        <h3 class="h6 mb-1">electabuzz</h3>
+                        <div class="text-muted small">000</div>
+                    </div>
+                    <div class="d-flex gap-2 mt-1">
+                        <span class="badge bg-warning text-dark type-badge">type</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </a>
+</article>
+
+<article class="col">
+    <a href="#" class="text-decoration-none">
+        <div class="card poke-card h-100 shadow-sm">
+            <div class="card-body d-flex gap-3 align-items-center">
+                <div class="sprite flex-shrink-0">
+                    <img src="image" alt="">
+                </div>
+                <div class="flex-grow-1">
+                    <div class="d-flex justify-content-between align-items-start">
+                        <h3 class="h6 mb-1">magmar</h3>
+                        <div class="text-muted small">000</div>
+                    </div>
+                    <div class="d-flex gap-2 mt-1">
+                        <span class="badge bg-warning text-dark type-badge">type</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </a>
+</article>
+
+<article class="col">
+    <a href="#" class="text-decoration-none">
+        <div class="card poke-card h-100 shadow-sm">
+            <div class="card-body d-flex gap-3 align-items-center">
+                <div class="sprite flex-shrink-0">
+                    <img src="image" alt="">
+                </div>
+                <div class="flex-grow-1">
+                    <div class="d-flex justify-content-between align-items-start">
+                        <h3 class="h6 mb-1">pinsir</h3>
+                        <div class="text-muted small">000</div>
+                    </div>
+                    <div class="d-flex gap-2 mt-1">
+                        <span class="badge bg-warning text-dark type-badge">type</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </a>
+</article>
+
+<article class="col">
+    <a href="#" class="text-decoration-none">
+        <div class="card poke-card h-100 shadow-sm">
+            <div class="card-body d-flex gap-3 align-items-center">
+                <div class="sprite flex-shrink-0">
+                    <img src="image" alt="">
+                </div>
+                <div class="flex-grow-1">
+                    <div class="d-flex justify-content-between align-items-start">
+                        <h3 class="h6 mb-1">tauros</h3>
+                        <div class="text-muted small">000</div>
+                    </div>
+                    <div class="d-flex gap-2 mt-1">
+                        <span class="badge bg-warning text-dark type-badge">type</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </a>
+</article>
+
+<article class="col">
+    <a href="#" class="text-decoration-none">
+        <div class="card poke-card h-100 shadow-sm">
+            <div class="card-body d-flex gap-3 align-items-center">
+                <div class="sprite flex-shrink-0">
+                    <img src="image" alt="">
+                </div>
+                <div class="flex-grow-1">
+                    <div class="d-flex justify-content-between align-items-start">
+                        <h3 class="h6 mb-1">magikarp</h3>
+                        <div class="text-muted small">000</div>
+                    </div>
+                    <div class="d-flex gap-2 mt-1">
+                        <span class="badge bg-warning text-dark type-badge">type</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </a>
+</article>
+
+<article class="col">
+    <a href="#" class="text-decoration-none">
+        <div class="card poke-card h-100 shadow-sm">
+            <div class="card-body d-flex gap-3 align-items-center">
+                <div class="sprite flex-shrink-0">
+                    <img src="image" alt="">
+                </div>
+                <div class="flex-grow-1">
+                    <div class="d-flex justify-content-between align-items-start">
+                        <h3 class="h6 mb-1">gyarados</h3>
+                        <div class="text-muted small">000</div>
+                    </div>
+                    <div class="d-flex gap-2 mt-1">
+                        <span class="badge bg-warning text-dark type-badge">type</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </a>
+</article>
+
+<article class="col">
+    <a href="#" class="text-decoration-none">
+        <div class="card poke-card h-100 shadow-sm">
+            <div class="card-body d-flex gap-3 align-items-center">
+                <div class="sprite flex-shrink-0">
+                    <img src="image" alt="">
+                </div>
+                <div class="flex-grow-1">
+                    <div class="d-flex justify-content-between align-items-start">
+                        <h3 class="h6 mb-1">lapras</h3>
+                        <div class="text-muted small">000</div>
+                    </div>
+                    <div class="d-flex gap-2 mt-1">
+                        <span class="badge bg-warning text-dark type-badge">type</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </a>
+</article>
+
+<article class="col">
+    <a href="#" class="text-decoration-none">
+        <div class="card poke-card h-100 shadow-sm">
+            <div class="card-body d-flex gap-3 align-items-center">
+                <div class="sprite flex-shrink-0">
+                    <img src="image" alt="">
+                </div>
+                <div class="flex-grow-1">
+                    <div class="d-flex justify-content-between align-items-start">
+                        <h3 class="h6 mb-1">ditto</h3>
+                        <div class="text-muted small">000</div>
+                    </div>
+                    <div class="d-flex gap-2 mt-1">
+                        <span class="badge bg-warning text-dark type-badge">type</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </a>
+</article>
+
+<article class="col">
+    <a href="#" class="text-decoration-none">
+        <div class="card poke-card h-100 shadow-sm">
+            <div class="card-body d-flex gap-3 align-items-center">
+                <div class="sprite flex-shrink-0">
+                    <img src="image" alt="">
+                </div>
+                <div class="flex-grow-1">
+                    <div class="d-flex justify-content-between align-items-start">
+                        <h3 class="h6 mb-1">eevee</h3>
+                        <div class="text-muted small">000</div>
+                    </div>
+                    <div class="d-flex gap-2 mt-1">
+                        <span class="badge bg-warning text-dark type-badge">type</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </a>
+</article>
+
+<article class="col">
+    <a href="#" class="text-decoration-none">
+        <div class="card poke-card h-100 shadow-sm">
+            <div class="card-body d-flex gap-3 align-items-center">
+                <div class="sprite flex-shrink-0">
+                    <img src="image" alt="">
+                </div>
+                <div class="flex-grow-1">
+                    <div class="d-flex justify-content-between align-items-start">
+                        <h3 class="h6 mb-1">vaporeon</h3>
+                        <div class="text-muted small">000</div>
+                    </div>
+                    <div class="d-flex gap-2 mt-1">
+                        <span class="badge bg-warning text-dark type-badge">type</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </a>
+</article>
+
+<article class="col">
+    <a href="#" class="text-decoration-none">
+        <div class="card poke-card h-100 shadow-sm">
+            <div class="card-body d-flex gap-3 align-items-center">
+                <div class="sprite flex-shrink-0">
+                    <img src="image" alt="">
+                </div>
+                <div class="flex-grow-1">
+                    <div class="d-flex justify-content-between align-items-start">
+                        <h3 class="h6 mb-1">jolteon</h3>
+                        <div class="text-muted small">000</div>
+                    </div>
+                    <div class="d-flex gap-2 mt-1">
+                        <span class="badge bg-warning text-dark type-badge">type</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </a>
+</article>
+
+<article class="col">
+    <a href="#" class="text-decoration-none">
+        <div class="card poke-card h-100 shadow-sm">
+            <div class="card-body d-flex gap-3 align-items-center">
+                <div class="sprite flex-shrink-0">
+                    <img src="image" alt="">
+                </div>
+                <div class="flex-grow-1">
+                    <div class="d-flex justify-content-between align-items-start">
+                        <h3 class="h6 mb-1">flareon</h3>
+                        <div class="text-muted small">000</div>
+                    </div>
+                    <div class="d-flex gap-2 mt-1">
+                        <span class="badge bg-warning text-dark type-badge">type</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </a>
+</article>
+
+<article class="col">
+    <a href="#" class="text-decoration-none">
+        <div class="card poke-card h-100 shadow-sm">
+            <div class="card-body d-flex gap-3 align-items-center">
+                <div class="sprite flex-shrink-0">
+                    <img src="image" alt="">
+                </div>
+                <div class="flex-grow-1">
+                    <div class="d-flex justify-content-between align-items-start">
+                        <h3 class="h6 mb-1">porygon</h3>
+                        <div class="text-muted small">000</div>
+                    </div>
+                    <div class="d-flex gap-2 mt-1">
+                        <span class="badge bg-warning text-dark type-badge">type</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </a>
+</article>
+
+<article class="col">
+    <a href="#" class="text-decoration-none">
+        <div class="card poke-card h-100 shadow-sm">
+            <div class="card-body d-flex gap-3 align-items-center">
+                <div class="sprite flex-shrink-0">
+                    <img src="image" alt="">
+                </div>
+                <div class="flex-grow-1">
+                    <div class="d-flex justify-content-between align-items-start">
+                        <h3 class="h6 mb-1">omanyte</h3>
+                        <div class="text-muted small">000</div>
+                    </div>
+                    <div class="d-flex gap-2 mt-1">
+                        <span class="badge bg-warning text-dark type-badge">type</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </a>
+</article>
+
+<article class="col">
+    <a href="#" class="text-decoration-none">
+        <div class="card poke-card h-100 shadow-sm">
+            <div class="card-body d-flex gap-3 align-items-center">
+                <div class="sprite flex-shrink-0">
+                    <img src="image" alt="">
+                </div>
+                <div class="flex-grow-1">
+                    <div class="d-flex justify-content-between align-items-start">
+                        <h3 class="h6 mb-1">omastar</h3>
+                        <div class="text-muted small">000</div>
+                    </div>
+                    <div class="d-flex gap-2 mt-1">
+                        <span class="badge bg-warning text-dark type-badge">type</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </a>
+</article>
+
+<article class="col">
+    <a href="#" class="text-decoration-none">
+        <div class="card poke-card h-100 shadow-sm">
+            <div class="card-body d-flex gap-3 align-items-center">
+                <div class="sprite flex-shrink-0">
+                    <img src="image" alt="">
+                </div>
+                <div class="flex-grow-1">
+                    <div class="d-flex justify-content-between align-items-start">
+                        <h3 class="h6 mb-1">kabuto</h3>
+                        <div class="text-muted small">000</div>
+                    </div>
+                    <div class="d-flex gap-2 mt-1">
+                        <span class="badge bg-warning text-dark type-badge">type</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </a>
+</article>
+
+<article class="col">
+    <a href="#" class="text-decoration-none">
+        <div class="card poke-card h-100 shadow-sm">
+            <div class="card-body d-flex gap-3 align-items-center">
+                <div class="sprite flex-shrink-0">
+                    <img src="image" alt="">
+                </div>
+                <div class="flex-grow-1">
+                    <div class="d-flex justify-content-between align-items-start">
+                        <h3 class="h6 mb-1">kabutops</h3>
+                        <div class="text-muted small">000</div>
+                    </div>
+                    <div class="d-flex gap-2 mt-1">
+                        <span class="badge bg-warning text-dark type-badge">type</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </a>
+</article>
+
+<article class="col">
+    <a href="#" class="text-decoration-none">
+        <div class="card poke-card h-100 shadow-sm">
+            <div class="card-body d-flex gap-3 align-items-center">
+                <div class="sprite flex-shrink-0">
+                    <img src="image" alt="">
+                </div>
+                <div class="flex-grow-1">
+                    <div class="d-flex justify-content-between align-items-start">
+                        <h3 class="h6 mb-1">aerodactyl</h3>
+                        <div class="text-muted small">000</div>
+                    </div>
+                    <div class="d-flex gap-2 mt-1">
+                        <span class="badge bg-warning text-dark type-badge">type</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </a>
+</article>
+
+<article class="col">
+    <a href="#" class="text-decoration-none">
+        <div class="card poke-card h-100 shadow-sm">
+            <div class="card-body d-flex gap-3 align-items-center">
+                <div class="sprite flex-shrink-0">
+                    <img src="image" alt="">
+                </div>
+                <div class="flex-grow-1">
+                    <div class="d-flex justify-content-between align-items-start">
+                        <h3 class="h6 mb-1">snorlax</h3>
+                        <div class="text-muted small">000</div>
+                    </div>
+                    <div class="d-flex gap-2 mt-1">
+                        <span class="badge bg-warning text-dark type-badge">type</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </a>
+</article>
+
+<article class="col">
+    <a href="#" class="text-decoration-none">
+        <div class="card poke-card h-100 shadow-sm">
+            <div class="card-body d-flex gap-3 align-items-center">
+                <div class="sprite flex-shrink-0">
+                    <img src="image" alt="">
+                </div>
+                <div class="flex-grow-1">
+                    <div class="d-flex justify-content-between align-items-start">
+                        <h3 class="h6 mb-1">articuno</h3>
+                        <div class="text-muted small">000</div>
+                    </div>
+                    <div class="d-flex gap-2 mt-1">
+                        <span class="badge bg-warning text-dark type-badge">type</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </a>
+</article>
+
+<article class="col">
+    <a href="#" class="text-decoration-none">
+        <div class="card poke-card h-100 shadow-sm">
+            <div class="card-body d-flex gap-3 align-items-center">
+                <div class="sprite flex-shrink-0">
+                    <img src="image" alt="">
+                </div>
+                <div class="flex-grow-1">
+                    <div class="d-flex justify-content-between align-items-start">
+                        <h3 class="h6 mb-1">zapdos</h3>
+                        <div class="text-muted small">000</div>
+                    </div>
+                    <div class="d-flex gap-2 mt-1">
+                        <span class="badge bg-warning text-dark type-badge">type</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </a>
+</article>
+
+<article class="col">
+    <a href="#" class="text-decoration-none">
+        <div class="card poke-card h-100 shadow-sm">
+            <div class="card-body d-flex gap-3 align-items-center">
+                <div class="sprite flex-shrink-0">
+                    <img src="image" alt="">
+                </div>
+                <div class="flex-grow-1">
+                    <div class="d-flex justify-content-between align-items-start">
+                        <h3 class="h6 mb-1">moltres</h3>
+                        <div class="text-muted small">000</div>
+                    </div>
+                    <div class="d-flex gap-2 mt-1">
+                        <span class="badge bg-warning text-dark type-badge">type</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </a>
+</article>
+
+<article class="col">
+    <a href="#" class="text-decoration-none">
+        <div class="card poke-card h-100 shadow-sm">
+            <div class="card-body d-flex gap-3 align-items-center">
+                <div class="sprite flex-shrink-0">
+                    <img src="image" alt="">
+                </div>
+                <div class="flex-grow-1">
+                    <div class="d-flex justify-content-between align-items-start">
+                        <h3 class="h6 mb-1">dratini</h3>
+                        <div class="text-muted small">000</div>
+                    </div>
+                    <div class="d-flex gap-2 mt-1">
+                        <span class="badge bg-warning text-dark type-badge">type</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </a>
+</article>
+
+<article class="col">
+    <a href="#" class="text-decoration-none">
+        <div class="card poke-card h-100 shadow-sm">
+            <div class="card-body d-flex gap-3 align-items-center">
+                <div class="sprite flex-shrink-0">
+                    <img src="image" alt="">
+                </div>
+                <div class="flex-grow-1">
+                    <div class="d-flex justify-content-between align-items-start">
+                        <h3 class="h6 mb-1">dragonair</h3>
+                        <div class="text-muted small">000</div>
+                    </div>
+                    <div class="d-flex gap-2 mt-1">
+                        <span class="badge bg-warning text-dark type-badge">type</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </a>
+</article>
+
+<article class="col">
+    <a href="#" class="text-decoration-none">
+        <div class="card poke-card h-100 shadow-sm">
+            <div class="card-body d-flex gap-3 align-items-center">
+                <div class="sprite flex-shrink-0">
+                    <img src="image" alt="">
+                </div>
+                <div class="flex-grow-1">
+                    <div class="d-flex justify-content-between align-items-start">
+                        <h3 class="h6 mb-1">dragonite</h3>
+                        <div class="text-muted small">000</div>
+                    </div>
+                    <div class="d-flex gap-2 mt-1">
+                        <span class="badge bg-warning text-dark type-badge">type</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </a>
+</article>
+
+<article class="col">
+    <a href="#" class="text-decoration-none">
+        <div class="card poke-card h-100 shadow-sm">
+            <div class="card-body d-flex gap-3 align-items-center">
+                <div class="sprite flex-shrink-0">
+                    <img src="image" alt="">
+                </div>
+                <div class="flex-grow-1">
+                    <div class="d-flex justify-content-between align-items-start">
+                        <h3 class="h6 mb-1">mewtwo</h3>
+                        <div class="text-muted small">000</div>
+                    </div>
+                    <div class="d-flex gap-2 mt-1">
+                        <span class="badge bg-warning text-dark type-badge">type</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </a>
+</article>
+
+<article class="col">
+    <a href="#" class="text-decoration-none">
+        <div class="card poke-card h-100 shadow-sm">
+            <div class="card-body d-flex gap-3 align-items-center">
+                <div class="sprite flex-shrink-0">
+                    <img src="image" alt="">
+                </div>
+                <div class="flex-grow-1">
+                    <div class="d-flex justify-content-between align-items-start">
+                        <h3 class="h6 mb-1">mew</h3>
+                        <div class="text-muted small">000</div>
+                    </div>
+                    <div class="d-flex gap-2 mt-1">
+                        <span class="badge bg-warning text-dark type-badge">type</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </a>
+</article>
+
+    </section>
+  </main>
+</body>
+
+</html>
