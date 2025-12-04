@@ -102,4 +102,4 @@ get_icecream(icecream_type='Choko')
 
 my_func(10, 20)
 my_func(10, 20, 30)
-my_func(10, 20, c=30)
+my_func(10, 20, data=30, c=10)

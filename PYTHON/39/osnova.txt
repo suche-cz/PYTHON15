@@ -1,0 +1,5 @@
+funkce *args, **kwargs
+
+- výpočet vzdálenosti bodů
+
+regex + scraping, data mining
