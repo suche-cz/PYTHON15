@@ -33,6 +33,8 @@ if __name__ == '__main__':
 
         resize_image(path, thumb_path, size=resize_to)
         print('thumb saved into', thumb_path)
+        resize_image(path, thumb_path, size=(400, 400))
+        resize_image(path, thumb_path, size=(800, 800))
     
 
     main()
