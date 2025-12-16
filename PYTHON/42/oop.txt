@@ -1,0 +1,65 @@
+Vztahy mezi objekty:
+
+(vztah mezi objekty)
+Asociace - obecný vztah mezi 2 objekty
+- Agregace - prvek pouřivý druhy prvek, ale oba mohou existovat samostatně
+- Kompozice - jeden prvek je součástí většího celku, prvek nemůžu existovat samostatně
+
+
+(vztahy mezi typy objektů)
+Dědičnost - vztah rozšíření objektů
+- 2 znaky:
+
+1) prvek (potomek) je speciální variantu druhého (rodiče)
+2) prvek (potomek) dokáže 100% nahradit rodiče, ale naopak to neplatí
+
+
+https://miro.medium.com/1*yu9X0kIyCve3lBdbbhsx2Q.png
+
+
+class AbsKitchen:
+    pass
+
+
+class Kitchen(AbsKitchen):
+    pass
+
+
+class ToyKitchen(AbsKitchen):
+    pass
+
+
+----------------------------------------------------
+
+
+class AbsGlasses:
+    pass
+
+
+class OpticGlasses(AbsGlasses):
+    pass
+
+
+class SwimGlasses(AbsGlasses):
+    pass
+
+
+class SkiGlasses(AbsGlasses):
+    pass
+
+
+class SkilGlassesWithOptical(SkiGlasses, OpticGlasses):
+    pass
+
+---------------------------------------------------
+
+class GlassProperties:
+    pass
+
+
+class Glasses:
+    properties = [
+        GlassProperties('optical'),
+        GlassProperties('protective'),
+    ]
+
