@@ -1,0 +1,38 @@
+https://miro.medium.com/v2/1*VGO2Stzs2rzpEDX7aHlkrQ.png
+
+
+https://media2.dev.to/dynamic/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fcdn.hashnode.com%2Fres%2Fhashnode%2Fimage%2Fupload%2Fv1619466042369%2Fb3LAaF7TO.png
+
+
+1. vytvořit si projektovou složku
+mkdir nazev_projektu
+2. jít do projektové složky
+cd nazev_projektu
+
+3. vytvoření venv:
+python -m venv .env
+nebo
+py -m venv .env
+
+4. aktivace virualního prostředí
+a. .\.env\Scripts\activate
+deaktivace:
+.\.env\Scripts\deactivate
+
+b. nastavení pro VS code
+ctrl + shift + p
+vyhledáme python select interpreter
+vybereme python.exe z .env, které jsme vytvořili
+
+Instalace djanga:
+
+python -m pip install django
+
+Vytvoření projektu v aktuální složce:
+django-admin startproject _project .
+poznámka: na konci je tečka, ta říká že se to má udělat v aktuální složce
+
+spuštění serveru:
+python manage.py runserver
+
+
