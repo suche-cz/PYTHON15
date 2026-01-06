@@ -1,6 +1,5 @@
 https://miro.medium.com/v2/1*VGO2Stzs2rzpEDX7aHlkrQ.png
 
-
 https://media2.dev.to/dynamic/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fcdn.hashnode.com%2Fres%2Fhashnode%2Fimage%2Fupload%2Fv1619466042369%2Fb3LAaF7TO.png
 
 
@@ -34,5 +33,4 @@ poznámka: na konci je tečka, ta říká že se to má udělat v aktuální slo
 
 spuštění serveru:
 python manage.py runserver
-
 
