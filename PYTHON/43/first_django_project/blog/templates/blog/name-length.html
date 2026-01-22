@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <main class="container">
+        <h1>Name length</h1>
+        <h2>Your name {{ name }} has {{ length }} characters</h2>
+
+        <form action="/blog/get-name-length/" method="get">
+            <div class="mb-3" style="max-width: 320px;">
+                <label for="name" class="form-label">Enter your name</label>
+                <input type="text" name="name" class="form-control" id="name" value="{{ name }}">
+            </div>
+
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+
+    </main>
+
+</body>
+
+</html>

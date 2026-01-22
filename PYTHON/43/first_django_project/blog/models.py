@@ -30,16 +30,11 @@ class Growth(models.Model):
     note = models.TextField(max_length=200, blank=True)
 
 
-
-
 """
-
 Tasky:
-
-
-
+knihovna subprocess pro spouštění tasků
+knihovna psutil - pro monitoring tasků
 """
-
 
 """
 1. virtuální prostředí
