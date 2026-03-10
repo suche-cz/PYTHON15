@@ -1,0 +1,46 @@
+DB Objekty
+
+Základní DB objekty
+TABLE: Základní úložiště dat v řádcích a sloupcích.
+VIEW: Virtuální tabulka definovaná SQL dotazem. Neukládá data, pouze logiku.
+INDEX: Pomocná struktura pro zrychlení vyhledávání.
+SEQUENCE: Generátor unikátních číselných hodnot (často pro PK).
+SCHEMA: Logický kontejner pro seskupení objektů.
+
+Programovatelné objekty
+PROCEDURE: Blok kódu pro vykonání akcí. Může měnit data, nemá návratovou hodnotu (často void).
+FUNCTION: (min, max...) Vrací hodnotu. Používá se přímo v SELECT. Nesmí měnit stav DB (v některých systémech).
+TRIGGER: Automaticky spouštěný kód při události (INSERT, UPDATE, DELETE).
+CONSTRAINT: Pravidla pro integritu (PRIMARY KEY, FOREIGN KEY, CHECK, NOT NULL).
+
+
+PRIMARY KEY
+FOREIGN KEY
+
+
+SQL Joiny
+https://i.sstatic.net/UI25E.jpg
+
+INNER JOIN: Pouze řádky, které mají shodu v obou tabulkách.
+LEFT JOIN (nebo LEFT OUTER JOIN): Všechny řádky z levé tabulky + odpovídající z pravé (jinak NULL).
+RIGHT JOIN: Všechny řádky z pravé tabulky + odpovídající z levé (jinak NULL).
+FULL JOIN: Všechny řádky z obou tabulek, chybějící data jsou NULL.
+CROSS JOIN: Kartézský součin (každý s každým).
+
+
+DB transakce - pokud příkazy provedeme v 1. transakci vykonají se všechny nebo žádná
+- např může nastat chyba (ostatní se neprovede a předohozí se vrátí do původního stavu - rollback)
+
+
+SQL Indexy
+Indexy zrychlují vyhledávání (SELECT), ale zpomalují zápis (INSERT, UPDATE, DELETE).
+
+Základní typy
+B-Tree: Výchozí a nejčastější. Efektivní pro rovnost (=) a rozsahy (BETWEEN, >, <).
+Unique: Zajišťuje, že se hodnoty ve sloupci neopakují.
+Composite (Složený): Index na více sloupců současně. Záleží na pořadí (pravidlo levé strany).
+Full-text: Pro vyhledávání v dlouhých textových polích.
+
+
+Python SQLite
+SQL Inject - bezpečnostní riziko, vždy používat jako parametry (Django to má vyřešené)
