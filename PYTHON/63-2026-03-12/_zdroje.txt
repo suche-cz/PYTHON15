@@ -1,0 +1,12 @@
+Sort (řadící) algoritmy
+https://www.wscubetech.com/resources/dsa/bubble-sort
+https://www.wscubetech.com/resources/dsa/quick-sort
+
+
+Stručný přehled
+https://www.anaconda.com/blog/python-data-structures-types-use-cases-complexity
+
+
+Podrobné návody
+https://realpython.com/learning-paths/classic-data-structures-and-algorithms-with-python/
+https://realpython.com/python-data-structures/
