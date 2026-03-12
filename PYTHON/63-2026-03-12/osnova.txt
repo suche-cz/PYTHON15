@@ -1,0 +1,64 @@
+Stačí znát principy, v praxi použiješ vestavěné metody:
+
+1. Řazení (Sorting)
+Bubble Sort: Jen jako odstrašující příklad neefektivity O(n**2)
+Quick Sort: Rozumět principu "Rozděl a panuj".
+
+
+2. Vyhledávání (Searching)
+Linear Search: Základ pro procházení polí.
+Binary Search: Nutnost pro efektivní hledání v seřazených datech O(Log(n))
+
+3. Práce s poli a objekty (Array/Hash Map)
+Odstranění duplicit: (např. pomocí `Set` v JS nebo `set()` v Pythonu).
+Frekvenční analýza: Počítání výskytů prvků pomocí Hash Mapy (objektu/slovníku).
+- práce se set (+pro odstranění duplicit)
+- object Counter
+
+4. Rekurze (Recursion)
+Pochopení větvení kódu a základních případů (Base Case).
+Zásadní pro procházení stromových struktur (např. DOM v HTML).
+
+
+def bubble_sort(arr):
+    n = len(arr)
+    for i in range(n):
+        swapped = False
+        for j in range(0, n - i - 1):
+            if arr[j] > arr[j + 1]:
+                arr[j], arr[j + 1] = arr[j + 1], arr[j]
+                swapped = True
+        if not swapped:
+            break
+    return arr
+
+
+def binary_search(arr, target):
+    low = 0
+    high = len(arr) - 1
+
+    while low <= high:
+        mid = (low + high) // 2
+        guess = arr[mid]
+
+        if guess == target:
+            return mid
+        if guess > target:
+            high = mid - 1
+        else:
+            low = mid + 1
+            
+    return -1  # Nenalezeno
+
+
+
+def quicksort(arr):
+    if len(arr) <= 1:
+        return arr
+    
+    pivot = arr[len(arr) // 2]  # Výběr prostředního prvku
+    left = [x for x in arr if x < pivot]
+    middle = [x for x in arr if x == pivot]
+    right = [x for x in arr if x > pivot]
+    
+    return quicksort(left) + middle + quicksort(right)
